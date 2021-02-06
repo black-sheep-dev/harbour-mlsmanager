@@ -92,6 +92,7 @@ static QMap<QString, QString> names = {
     {QStringLiteral("re"), QObject::tr("Reunion")},
     {QStringLiteral("ro"), QObject::tr("Romania")},
     {QStringLiteral("rs"), QObject::tr("Serbia")},
+    {QStringLiteral("ru"), QObject::tr("Russia")},
     {QStringLiteral("rw"), QObject::tr("Rwanda")},
     {QStringLiteral("sc"), QObject::tr("Seychelles")},
     {QStringLiteral("sd"), QObject::tr("Sudan")},

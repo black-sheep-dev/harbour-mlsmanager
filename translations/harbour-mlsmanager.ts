@@ -501,5 +501,9 @@
         <source>Zimbabwe</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Russia</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>
