@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="de_DE">
+<context>
+    <name>AboutPage</name>
+    <message>
+        <source>About</source>
+        <translation>Über</translation>
+    </message>
+    <message>
+        <source>MLS Manager</source>
+        <translation>MLS Manager</translation>
+    </message>
+    <message>
+        <source>Manager for Mozilla Location Service offline packages for Sailfish OS.</source>
+        <translation>Manager für die offline Daten vom Mozilla Location Service für Sailfish OS.</translation>
+    </message>
+    <message>
+        <source>Sources</source>
+        <translation>Quellen</translation>
+    </message>
+    <message>
+        <source>Donations</source>
+        <translation>Spenden</translation>
+    </message>
+    <message>
+        <source>If you like my work you can buy me a beer.</source>
+        <translation>Wenn dir meine Arbeit gefällt, kannst du mir ein Bier ausgeben.</translation>
+    </message>
+</context>
+<context>
+    <name>MainPage</name>
+    <message>
+        <source>About</source>
+        <translation>Über</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>Aktualisieren</translation>
+    </message>
+    <message>
+        <source>Hide search</source>
+        <translation>Suche ausblenden</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Suchen</translation>
+    </message>
+    <message>
+        <source>Offline Packages</source>
+        <translation>Offline Pakete</translation>
+    </message>
+    <message>
+        <source>Install</source>
+        <translation>Installieren</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Entfernen</translation>
+    </message>
+    <message>
+        <source>No offline packages available</source>
+        <translation>Keine offline Pakete vorhanden</translation>
+    </message>
+    <message>
+        <source>Check your internet connection</source>
+        <translation>Überprüfe deine Internetverbindung</translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation>Aktualisieren</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>Austria</source>
+        <translation>Österreich</translation>
+    </message>
+    <message>
+        <source>Belgium</source>
+        <translation>Belgien</translation>
+    </message>
+    <message>
+        <source>Bulgaria</source>
+        <translation>Bulgarien</translation>
+    </message>
+    <message>
+        <source>Switzerland</source>
+        <translation>Schweiz</translation>
+    </message>
+    <message>
+        <source>Germany</source>
+        <translation>Deutschland</translation>
+    </message>
+    <message>
+        <source>Denmark</source>
+        <translation>Dänemark</translation>
+    </message>
+    <message>
+        <source>Estonia</source>
+        <translation>Estland</translation>
+    </message>
+    <message>
+        <source>Spain</source>
+        <translation>Spanien</translation>
+    </message>
+    <message>
+        <source>Finland</source>
+        <translation>Finnland</translation>
+    </message>
+    <message>
+        <source>France</source>
+        <translation>Frankreich</translation>
+    </message>
+    <message>
+        <source>Greece</source>
+        <translation>Griechenland</translation>
+    </message>
+    <message>
+        <source>Croatia</source>
+        <translation>Kroatien</translation>
+    </message>
+    <message>
+        <source>Hungary</source>
+        <translation>Ungarn</translation>
+    </message>
+    <message>
+        <source>Ireland</source>
+        <translation>Irland</translation>
+    </message>
+    <message>
+        <source>Italy</source>
+        <translation>Italien</translation>
+    </message>
+    <message>
+        <source>Luxembourg</source>
+        <translation>Luxemburg</translation>
+    </message>
+    <message>
+        <source>Latvia</source>
+        <translation>Lettland</translation>
+    </message>
+    <message>
+        <source>Netherlands</source>
+        <translation>Niederlanden</translation>
+    </message>
+    <message>
+        <source>Poland</source>
+        <translation>Polen</translation>
+    </message>
+    <message>
+        <source>Portugal</source>
+        <translation>Portugal</translation>
+    </message>
+    <message>
+        <source>Romania</source>
+        <translation>Rumänien</translation>
+    </message>
+    <message>
+        <source>Sweden</source>
+        <translation>Schweden</translation>
+    </message>
+    <message>
+        <source>Slovenia</source>
+        <translation>Slovenien</translation>
+    </message>
+    <message>
+        <source>Slovakia</source>
+        <translation>Slowakei</translation>
+    </message>
+    <message>
+        <source>Bosnia and Herzegovina</source>
+        <translation>Bosnien und Herzegowina</translation>
+    </message>
+    <message>
+        <source>Belarus</source>
+        <translation>Belarus</translation>
+    </message>
+    <message>
+        <source>Norway</source>
+        <translation>Norwegen</translation>
+    </message>
+    <message>
+        <source>Serbia</source>
+        <translation>Serbien</translation>
+    </message>
+    <message>
+        <source>United Kingdom</source>
+        <translation>Vereinigest Königreich</translation>
+    </message>
+    <message>
+        <source>Czech Republic</source>
+        <translation>Tschechien</translation>
+    </message>
+    <message>
+        <source>Andorra</source>
+        <translation>Andorra</translation>
+    </message>
+    <message>
+        <source>Albania</source>
+        <translation>Albanien</translation>
+    </message>
+    <message>
+        <source>Armenia</source>
+        <translation>Armenien</translation>
+    </message>
+    <message>
+        <source>Angola</source>
+        <translation>Angola</translation>
+    </message>
+    <message>
+        <source>Australia</source>
+        <translation>Australien</translation>
+    </message>
+    <message>
+        <source>Aland Islands</source>
+        <translation>Aland Inseln</translation>
+    </message>
+    <message>
+        <source>Azerbaijan</source>
+        <translation>Aserbaidschan</translation>
+    </message>
+    <message>
+        <source>Burkina Faso</source>
+        <translation>Burkina Faso</translation>
+    </message>
+    <message>
+        <source>Burundi</source>
+        <translation>Burundi</translation>
+    </message>
+    <message>
+        <source>Benin</source>
+        <translation>Benin</translation>
+    </message>
+    <message>
+        <source>Botswana</source>
+        <translation>Botswana</translation>
+    </message>
+    <message>
+        <source>Democratic Republic of the Congo</source>
+        <translation>Demokratische Republik Kongo</translation>
+    </message>
+    <message>
+        <source>Central African Rebublic</source>
+        <translation>Zentralafrikanische Republik</translation>
+    </message>
+    <message>
+        <source>Congo</source>
+        <translation>Kongo</translation>
+    </message>
+    <message>
+        <source>Cameroon</source>
+        <translation>Kamerun</translation>
+    </message>
+    <message>
+        <source>Cap Verde</source>
+        <translation>Kap Verde</translation>
+    </message>
+    <message>
+        <source>Cyprus</source>
+        <translation>Zypern</translation>
+    </message>
+    <message>
+        <source>Djibouti</source>
+        <translation>Dschibuti</translation>
+    </message>
+    <message>
+        <source>Algeria</source>
+        <translation>Algerien</translation>
+    </message>
+    <message>
+        <source>Egypt</source>
+        <translation>Ägypten</translation>
+    </message>
+    <message>
+        <source>Eritrea</source>
+        <translation>Eritrea</translation>
+    </message>
+    <message>
+        <source>Ethiopia</source>
+        <translation>Äthiopien</translation>
+    </message>
+    <message>
+        <source>Faroe Islands</source>
+        <translation>Färöer Inseln</translation>
+    </message>
+    <message>
+        <source>Gabon</source>
+        <translation>Gabun</translation>
+    </message>
+    <message>
+        <source>Guernsey</source>
+        <translation>Guernsey</translation>
+    </message>
+    <message>
+        <source>Ghana</source>
+        <translation>Ghana</translation>
+    </message>
+    <message>
+        <source>Gibraltar</source>
+        <translation>Gibraltar</translation>
+    </message>
+    <message>
+        <source>Gambia</source>
+        <translation>Gambia</translation>
+    </message>
+    <message>
+        <source>Guinea</source>
+        <translation>Guinea</translation>
+    </message>
+    <message>
+        <source>Equatorial Guinea</source>
+        <translation>Äquatorialguinea</translation>
+    </message>
+    <message>
+        <source>Guinea Bissau</source>
+        <translation>Guinea Bessau</translation>
+    </message>
+    <message>
+        <source>Isle of Man</source>
+        <translation>Isle of Man</translation>
+    </message>
+    <message>
+        <source>India</source>
+        <translation>Indien</translation>
+    </message>
+    <message>
+        <source>Iceland</source>
+        <translation>Island</translation>
+    </message>
+    <message>
+        <source>Jersey</source>
+        <translation>Jersey</translation>
+    </message>
+    <message>
+        <source>Kenya</source>
+        <translation>Kenia</translation>
+    </message>
+    <message>
+        <source>Comoros</source>
+        <translation>Komoren</translation>
+    </message>
+    <message>
+        <source>Kazakhstan</source>
+        <translation>Kasachstan</translation>
+    </message>
+    <message>
+        <source>Liechtenstein</source>
+        <translation>Lichtenstein</translation>
+    </message>
+    <message>
+        <source>Liberia</source>
+        <translation>Liberia</translation>
+    </message>
+    <message>
+        <source>Lesotho</source>
+        <translation>Lesotho</translation>
+    </message>
+    <message>
+        <source>Lithuania</source>
+        <translation>Litauen</translation>
+    </message>
+    <message>
+        <source>Lybia</source>
+        <translation>Libyen</translation>
+    </message>
+    <message>
+        <source>Morocco</source>
+        <translation>Marokko</translation>
+    </message>
+    <message>
+        <source>Monaco</source>
+        <translation>Monaco</translation>
+    </message>
+    <message>
+        <source>Moldova</source>
+        <translation>Moldau</translation>
+    </message>
+    <message>
+        <source>Montenegro</source>
+        <translation>Montenegro</translation>
+    </message>
+    <message>
+        <source>Madagascar</source>
+        <translation>Madagaskar</translation>
+    </message>
+    <message>
+        <source>North Macedonia</source>
+        <translation>Nord Mazedonien</translation>
+    </message>
+    <message>
+        <source>Mali</source>
+        <translation>Mali</translation>
+    </message>
+    <message>
+        <source>Mauritania</source>
+        <translation>Mauretanien</translation>
+    </message>
+    <message>
+        <source>Malta</source>
+        <translation>Malta</translation>
+    </message>
+    <message>
+        <source>Mauritius</source>
+        <translation>Mauritius</translation>
+    </message>
+    <message>
+        <source>Malawi</source>
+        <translation>Malawi</translation>
+    </message>
+    <message>
+        <source>Mozambique</source>
+        <translation>Mosambik</translation>
+    </message>
+    <message>
+        <source>Namibia</source>
+        <translation>Namibia</translation>
+    </message>
+    <message>
+        <source>Niger</source>
+        <translation>Niger</translation>
+    </message>
+    <message>
+        <source>Nigera</source>
+        <translation>Nigeria</translation>
+    </message>
+    <message>
+        <source>Reunion</source>
+        <translation>Reunion</translation>
+    </message>
+    <message>
+        <source>Rwanda</source>
+        <translation>Ruanda</translation>
+    </message>
+    <message>
+        <source>Seychelles</source>
+        <translation>Seychellen</translation>
+    </message>
+    <message>
+        <source>Sudan</source>
+        <translation>Sudan</translation>
+    </message>
+    <message>
+        <source>Sierra_Leone</source>
+        <translation>Sierra Leone</translation>
+    </message>
+    <message>
+        <source>San Marino</source>
+        <translation>San Marino</translation>
+    </message>
+    <message>
+        <source>Senegal</source>
+        <translation>Senegal</translation>
+    </message>
+    <message>
+        <source>Somalia</source>
+        <translation>Somalia</translation>
+    </message>
+    <message>
+        <source>South Sudan</source>
+        <translation>Südsudan</translation>
+    </message>
+    <message>
+        <source>Sao Tome and Principe</source>
+        <translation>Sao Tome und Principe</translation>
+    </message>
+    <message>
+        <source>Chad</source>
+        <translation>Tschad</translation>
+    </message>
+    <message>
+        <source>Togo</source>
+        <translation>Togo</translation>
+    </message>
+    <message>
+        <source>Tanzania</source>
+        <translation>Tansania</translation>
+    </message>
+    <message>
+        <source>Ukraine</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Uganda</source>
+        <translation>Uganda</translation>
+    </message>
+    <message>
+        <source>Mayotte</source>
+        <translation>Mayotte</translation>
+    </message>
+    <message>
+        <source>South Africa</source>
+        <translation>Südafrika</translation>
+    </message>
+    <message>
+        <source>Zambia</source>
+        <translation>Sambia</translation>
+    </message>
+    <message>
+        <source>Zimbabwe</source>
+        <translation>Simbabwe</translation>
+    </message>
+</context>
+</TS>
