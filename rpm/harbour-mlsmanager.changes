@@ -1,3 +1,10 @@
+* Sun Feb 07 2021 Black Sheep <blacksheep@nubecula.org> 0.1.2-1
+- Update notifications
+- Update all packages at once in pulley menu
+- Remorse timer for actions
+- No need to make a new version of this app when new country is available
+- Code cleanup and improvments
+
 * Sat Feb 06 2021 Black Sheep <blacksheep@nubecula.org> 0.1.1-1
 - Added Russia (thanks to osetr again)
 

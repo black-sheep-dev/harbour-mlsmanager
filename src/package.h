@@ -5,6 +5,17 @@
 #include <QMetaType>
 #include <QString>
 
+struct PackageDTO {
+    QString id;
+    QString summary;
+
+    PackageDTO() = default;
+    PackageDTO(const QString &packageId, const QString &summary);
+    bool operator==(const PackageDTO &other) const;
+    bool operator!=(const PackageDTO &other) const;
+};
+Q_DECLARE_METATYPE(PackageDTO)
+
 struct Package
 {
     QString code;
@@ -12,6 +23,7 @@ struct Package
     bool installed{false};
     QString installedVersion;
     QString latestVersion;
+    QString name;
     bool updateAvailable{false};
 
     enum Action {

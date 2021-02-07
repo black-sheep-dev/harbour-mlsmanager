@@ -9,7 +9,7 @@ Name:       harbour-mlsmanager
 # << macros
 
 Summary:    MLS Manager
-Version:    0.1.1
+Version:    0.1.2
 Release:    1
 Group:      Location/Location Framework
 License:    MIT
@@ -17,10 +17,13 @@ URL:        https://github.com/black-sheep-dev/harbour-mlsmanager
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-mlsmanager.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
+Requires:   nemo-qml-plugin-notifications-qt5
+Requires:   nemo-qml-plugin-dbus-qt5
 BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
+BuildRequires:  pkgconfig(nemonotifications-qt5)
 BuildRequires:  desktop-file-utils
 
 %description
@@ -64,5 +67,6 @@ desktop-file-install --delete-original       \
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/mapplauncherd/privileges.d/%{name}.privileges
+%{_datadir}/dbus-1/services/harbour.mlsmanager.service
 # >> files
 # << files

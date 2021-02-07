@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=harbour.mlsmanager.service
+Exec=/usr/bin/invoker --type=silica-qt5 -s /usr/bin/harbour-mlsmanager
+User=nemo

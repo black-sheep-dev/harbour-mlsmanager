@@ -1,7 +1,5 @@
 #include "packagesmodel.h"
 
-#include "country.h"
-
 PackagesModel::PackagesModel(QObject *parent) :
     QAbstractListModel(parent)
 {
@@ -18,15 +16,34 @@ Package PackagesModel::packageByCode(const QString &code) const
     return Package();
 }
 
+QList<Package> PackagesModel::packages() const
+{
+    return m_packages;
+}
+
 bool PackagesModel::loading() const
 {
     return m_loading;
+}
+
+bool PackagesModel::updatesAvailable() const
+{
+    return m_updatesAvailable;
 }
 
 void PackagesModel::setPackages(const QList<Package> &packages)
 {
     beginResetModel();
     m_packages.clear();
+
+    for (const auto &pkg : packages) {
+        if (!pkg.updateAvailable)
+            continue;
+
+        setUpdatesAvailable(true);
+        break;
+    }
+
     m_packages = packages;
     endResetModel();
 
@@ -40,6 +57,15 @@ void PackagesModel::setLoading(bool loading)
 
     m_loading = loading;
     emit loadingChanged(m_loading);
+}
+
+void PackagesModel::setUpdatesAvailable(bool updatesAvailable)
+{
+    if (m_updatesAvailable == updatesAvailable)
+        return;
+
+    m_updatesAvailable = updatesAvailable;
+    emit updatesAvailableChanged(m_updatesAvailable);
 }
 
 int PackagesModel::rowCount(const QModelIndex &parent) const
@@ -64,7 +90,7 @@ QVariant PackagesModel::data(const QModelIndex &index, int role) const
         return package.downloadSize;
 
     case NameRole:
-        return Country::name(package.code);
+        return package.name;
 
     case InstalledRole:
         return package.installed;

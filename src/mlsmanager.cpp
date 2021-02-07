@@ -16,8 +16,12 @@ MlsManager::MlsManager(QObject *parent) :
     connect(this, &MlsManager::requestRefreshRepo, m_manager, &PackageManager::refreshRepo, Qt::QueuedConnection);
 
     connect(m_manager, &PackageManager::packagesAvailable, m_packagesModel, &PackagesModel::setPackages, Qt::QueuedConnection);
+    connect(m_manager, &PackageManager::operationError, this, &MlsManager::operationError, Qt::QueuedConnection);
+    connect(m_manager, &PackageManager::operationSuccess, this, &MlsManager::operationSuccess, Qt::QueuedConnection);
 
     m_manager->moveToThread(m_backgroundThread);
+
+    connect(m_packagesModel, &PackagesModel::updatesAvailableChanged, this, &MlsManager::onUpdatesAvailable);
 }
 
 MlsManager::~MlsManager()
@@ -71,6 +75,17 @@ void MlsManager::updatePackage(const QString &code)
     emit requestUpdatePackage(QStringList() << package.packageId(Package::Update));
 }
 
+void MlsManager::updatePackages()
+{
+    QStringList ids;
+    for (const auto pkg : m_packagesModel->packages()) {
+        if (pkg.updateAvailable)
+            ids.append(pkg.packageId());
+    }
+
+    requestUpdatePackage(ids);
+}
+
 void MlsManager::getUpdates()
 {
 
@@ -85,4 +100,17 @@ void MlsManager::refreshRepo()
 {
     m_packagesModel->setLoading(true);
     emit requestRefreshRepo();
+}
+
+void MlsManager::testSlot()
+{
+    emit updatesAvailable();
+}
+
+void MlsManager::onUpdatesAvailable(bool available)
+{
+    if (!available)
+        return;
+
+    emit updatesAvailable();
 }

@@ -6,6 +6,7 @@
 
 #include <QMutex>
 #include <QProcess>
+#include <QRegExp>
 #include <QSettings>
 #include <QVersionNumber>
 
@@ -100,6 +101,36 @@ void PackageManager::onErrorCode(quint32 code, const QString &details)
     qDebug() << code;
     qDebug() << details;
 #endif
+
+    auto t = qobject_cast<PackageTransaction *>(sender());
+
+    if (t == nullptr)
+        return;
+
+    QString msg;
+
+    switch (t->operation()) {
+    case RefreshRepo:
+        msg = tr("Failed to refresh repository");
+        break;
+
+    case PackageRemove:
+        msg = tr("Failed to remove package");
+        break;
+
+    case PackageInstall:
+        msg = tr("Failed to install package");
+        break;
+
+    case PackageUpdate:
+        msg = tr("Failed to update package(s)");
+        break;
+
+    default:
+        break;
+    }
+
+    emit operationError(msg);
 }
 
 void PackageManager::onFinished(quint32 exit, quint32 runtime)
@@ -120,6 +151,8 @@ void PackageManager::onFinished(quint32 exit, quint32 runtime)
     if (t == nullptr)
         return;
 
+    QString msg;
+
     switch (t->operation()) {
     case RefreshRepo:
     case RefreshCache:
@@ -127,8 +160,13 @@ void PackageManager::onFinished(quint32 exit, quint32 runtime)
         break;
 
     case PackageInstall:
+        msg = tr("Package installed");
+
     case PackageRemove:
+        msg = tr("Package removed");
+
     case PackageUpdate:
+        msg = tr("Package(s) updated");
         refreshRepo();
         break;
 
@@ -139,6 +177,8 @@ void PackageManager::onFinished(quint32 exit, quint32 runtime)
     default:
         break;
     }
+
+    emit operationSuccess(msg);
 
     // start next job
     startJob();
@@ -160,7 +200,7 @@ void PackageManager::onPackage(quint32 info, const QString &packageId, const QSt
 
     switch (t->operation()) {
     case PackageSearch:
-        m_packageIds.append(packageId);
+        m_packageBuffer.append(PackageDTO(packageId, summary));
         break;
 
     default:
@@ -211,7 +251,7 @@ void PackageManager::startJob()
         break;
 
     case PackageSearch:
-        m_packageIds.clear();
+        m_packageBuffer.clear();
         t->searchPackages(job.payload.toStringList());
         break;
 
@@ -283,16 +323,16 @@ void PackageManager::initialize()
 void PackageManager::parsePackages()
 {
     m_mutex.lock();
-    const auto ids = m_packageIds;
+    const auto pkgs = m_packageBuffer;
     m_mutex.unlock();
 
     QHash<QString, Package> packages;
 
-    for (const auto &id: ids) {
-        if (id.isEmpty())
+    for (const auto &p: pkgs) {
+        if (p.id.isEmpty())
             continue;
 
-        const auto parts = id.split(";");
+        const auto parts = p.id.split(";");
 
         if (parts.count() != 4)
             continue;
@@ -301,7 +341,7 @@ void PackageManager::parsePackages()
         const QString code = name.section("-", 3, 3);
         const QString version = parts.at(1);
 
-        if (code.isEmpty() && code == QLatin1String("eu"))
+        if (code.isEmpty() || code == QLatin1String("eu"))
             continue;
 
         Package pkg = packages.value(code, Package());
@@ -316,6 +356,10 @@ void PackageManager::parsePackages()
             pkg.latestVersion = version;
             pkg.updateAvailable = !pkg.installedVersion.isNull() && pkg.installedVersion < version;
         }
+
+        // get country name from description
+        const int pos = p.summary.indexOf("(") + 1;
+        pkg.name = p.summary.mid(pos, p.summary.length() - pos - 1).replace("_", " ");
 
         packages.insert(code, pkg);
     }

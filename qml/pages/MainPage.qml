@@ -20,6 +20,11 @@ Page {
                 onClicked: MlsManager.refreshRepo()
             }
             MenuItem {
+                visible: MlsManager.packagesModel().updatesAvailable
+                text: qsTr("Update all packages")
+                onClicked: remorsePopup.execute(qsTr("Updating all packages"), function() {MlsManager.updatePackages()} )
+            }
+            MenuItem {
                 text: listView.showSearch ? qsTr("Hide search") : qsTr("Search")
                 onClicked: {
                     listView.showSearch = !listView.showSearch
@@ -30,13 +35,19 @@ Page {
                     }
                 }
             }
+            /*
+            MenuItem {
+                text: "Test"
+                onClicked: MlsManager.testSlot()
+            }*/
         }
+
+        RemorsePopup { id: remorsePopup }
 
         Connections {
             target: MlsManager.packagesModel()
             onLoadingChanged: if (!loading) packagesSortFilterModel.sortModel()
         }
-
 
         anchors.fill: parent
 
@@ -100,22 +111,24 @@ Page {
                         visible: !model.installed
                         text: qsTr("Install")
 
-                        onClicked: MlsManager.installPackage(model.code)
+                        onClicked: remorse.execute(delegate, qsTr("Installing offline package"), function() { MlsManager.installPackage(model.code) })
                     }
                     MenuItem {
                         visible: model.installed
                         text: qsTr("Remove")
 
-                        onClicked: MlsManager.removePackage(model.code)
+                        onClicked: remorse.execute(delegate, qsTr("Removing offline package"), function() { MlsManager.removePackage(model.code) })
                     }
 
                     MenuItem {
                         visible: model.updateAvailable
                         text: qsTr("Update")
 
-                        onClicked: MlsManager.updatePackage(model.code)
+                        onClicked: remorse.execute(delegate, qsTr("Updating offline package"), function() { MlsManager.updatePackage(model.code) })
                     }
                 }
+
+                RemorseItem { id: remorse }
 
                 Row {
                     id: contentRow

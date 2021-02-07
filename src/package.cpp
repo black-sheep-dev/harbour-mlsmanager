@@ -4,6 +4,24 @@
 
 #include <QVersionNumber>
 
+PackageDTO::PackageDTO(const QString &packageId, const QString &summary) :
+    id(packageId),
+    summary(summary)
+{
+
+}
+
+bool PackageDTO::operator==(const PackageDTO &other) const
+{
+    return id == other.id
+            && summary == other.summary;
+}
+
+bool PackageDTO::operator!=(const PackageDTO &other) const
+{
+    return !(*this == other);
+}
+
 bool Package::isValid() const
 {
     return !code.isEmpty();
@@ -24,7 +42,9 @@ bool Package::operator==(const Package &other) const
             && downloadSize == other.downloadSize
             && latestVersion == other.latestVersion
             && installedVersion == other.installedVersion
-            && installed == other.installed;
+            && installed == other.installed
+            && name == other.name
+            && updateAvailable == other.updateAvailable;
 }
 
 bool Package::operator!=(const Package &other) const
@@ -36,6 +56,8 @@ QDebug operator<<(QDebug d, const Package &package)
 {
     d.nospace() << "Package("
                 << package.code
+                << ", "
+                << package.name
                 << ", "
                 << package.installedVersion
                 << ", "

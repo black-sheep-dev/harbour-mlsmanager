@@ -47,6 +47,8 @@ public:
     explicit PackageManager(QObject *parent = nullptr);
 
 signals:
+    void operationError(const QString &msg);
+    void operationSuccess(const QString &msg);
     void packagesAvailable(const QList<Package> &packages);
 
 public slots:
@@ -78,7 +80,7 @@ private:
 
     QQueue<QueuedJob> m_jobQueue;
     bool m_jobIsRunning{false};
-    QStringList m_packageIds;
+    QList<PackageDTO> m_packageBuffer;
     PackageDaemon *m_packageDaemon{new PackageDaemon(this)};
 };
 

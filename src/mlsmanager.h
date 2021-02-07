@@ -27,14 +27,25 @@ signals:
     void requestRefreshPackages();
     void requestRefreshRepo();
 
+    // process feedback
+    void operationError(const QString &msg);
+    void operationSuccess(const QString &msg);
+    void updatesAvailable();
+
 public slots:
     Q_INVOKABLE void installPackage(const QString &code);
     Q_INVOKABLE void removePackage(const QString &code);
     Q_INVOKABLE void updatePackage(const QString &code);
+    Q_INVOKABLE void updatePackages();
 
     Q_INVOKABLE void getUpdates();
     Q_INVOKABLE void refreshCache();
     Q_INVOKABLE void refreshRepo();
+
+    Q_INVOKABLE void testSlot();
+
+private slots:
+    void onUpdatesAvailable(bool available);
 
 private:
     QThread *m_backgroundThread{new QThread};
