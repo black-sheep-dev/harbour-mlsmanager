@@ -24,6 +24,7 @@ struct Package
     QString installedVersion;
     QString latestVersion;
     QString name;
+    quint8 progress{0};
     bool updateAvailable{false};
 
     enum Action {
@@ -33,7 +34,6 @@ struct Package
     };
 
     Package() = default;
-
     bool isValid() const;
     QString packageId(quint8 action = Install) const;
 

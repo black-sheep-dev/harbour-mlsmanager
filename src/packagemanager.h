@@ -48,6 +48,7 @@ public:
 
 signals:
     void operationError(const QString &msg);
+    void operationProgress(const QString &packageId, quint8 percentage);
     void operationSuccess(const QString &msg);
     void packagesAvailable(const QList<Package> &packages);
 

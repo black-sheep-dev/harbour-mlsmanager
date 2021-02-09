@@ -19,11 +19,12 @@ Source100:  harbour-mlsmanager.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
 Requires:   nemo-qml-plugin-notifications-qt5
 Requires:   nemo-qml-plugin-dbus-qt5
-BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
+BuildRequires:  pkgconfig(sailfishapp) >= 1.0.3
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(nemonotifications-qt5)
+BuildRequires:  PackageKit-Qt5-devel
 BuildRequires:  desktop-file-utils
 
 %description

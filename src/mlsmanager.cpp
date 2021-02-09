@@ -18,6 +18,7 @@ MlsManager::MlsManager(QObject *parent) :
     connect(m_manager, &PackageManager::packagesAvailable, m_packagesModel, &PackagesModel::setPackages, Qt::QueuedConnection);
     connect(m_manager, &PackageManager::operationError, this, &MlsManager::operationError, Qt::QueuedConnection);
     connect(m_manager, &PackageManager::operationSuccess, this, &MlsManager::operationSuccess, Qt::QueuedConnection);
+    connect(m_manager, &PackageManager::operationProgress, m_packagesModel, &PackagesModel::setPackageProgress, Qt::QueuedConnection);
 
     m_manager->moveToThread(m_backgroundThread);
 

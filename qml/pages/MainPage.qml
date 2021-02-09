@@ -130,6 +130,21 @@ Page {
 
                 RemorseItem { id: remorse }
 
+                Rectangle {
+                    id: progressBar
+                    anchors.left: parent.left
+                    anchors.top:    parent.top
+                    anchors.bottom: parent.bottom
+                    width: parent.width * model.progress / 100
+
+                    color: Theme.highlightBackgroundColor
+                    opacity: 0.2
+
+                    Behavior on width {
+                        NumberAnimation { duration: 300 }
+                    }
+                }
+
                 Row {
                     id: contentRow
 

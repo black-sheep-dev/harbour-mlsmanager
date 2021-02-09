@@ -219,6 +219,8 @@ void PackageManager::onItemProgress(const QString &id, uint status, uint percent
     qDebug() << status;
     qDebug() << percentage;
 #endif
+
+    emit operationProgress(id, percentage);
 }
 
 void PackageManager::startJob()

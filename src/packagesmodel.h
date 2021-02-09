@@ -20,6 +20,7 @@ public:
         InstalledRole,
         InstalledVersionRole,
         LatestVersionRole,
+        ProgressRole,
         UpdateAvailableRole
     };
     Q_ENUM(PackageRoles)
@@ -39,6 +40,7 @@ signals:
     void updatesAvailableChanged(bool updatesAvailable);
 
 public slots:
+    void setPackageProgress(const QString &packageId, quint8 percentage);
     void setPackages(const QList<Package> &packages);
 
     // properties
