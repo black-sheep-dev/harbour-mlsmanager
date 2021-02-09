@@ -34,8 +34,7 @@ Maybe I'll increase the frequency in the future.
 
 
 ## Available Countries
-At the moment all countries present in "geoclue-provider-mlsdb-tool" are available.
-More are planned when I get custom build of the tool.
+At the moment 185 different countries are available. That should be almost all. If you need more let me know in comment section.
 
 ## Translations
 
@@ -43,6 +42,10 @@ More are planned when I get custom build of the tool.
 - German  
   
 If you missing your native language you are welcome to support this project with your translation.
+
+Translations are possible on Transifex:
+
+https://www.transifex.com/nubecula/harbour-mlsmanager/
 
 ## Thanks
 I want to thank Petr Tsymbarovich(osetr) for his work on [Storeman](https://openrepos.net/content/osetr/storeman). His code helped me to get an idea how to handle repositories.
