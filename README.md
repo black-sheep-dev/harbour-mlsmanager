@@ -52,4 +52,8 @@ I want to thank Petr Tsymbarovich(osetr) for his work on [Storeman](https://open
 
 ## Donations
 
-If you like my work, you can buy me a beer! [Buy](https://www.paypal.com/paypalme/nubecula/1)
+If you like my work, you can buy me a beer! 
+
+[PayPal](https://www.paypal.com/paypalme/nubecula/1)
+
+[Liberapay](https://liberapay.com/black-sheep-dev/donate)
