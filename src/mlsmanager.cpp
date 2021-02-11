@@ -19,6 +19,7 @@ MlsManager::MlsManager(QObject *parent) :
     connect(m_manager, &PackageManager::operationError, this, &MlsManager::operationError, Qt::QueuedConnection);
     connect(m_manager, &PackageManager::operationSuccess, this, &MlsManager::operationSuccess, Qt::QueuedConnection);
     connect(m_manager, &PackageManager::operationProgress, m_packagesModel, &PackagesModel::setPackageProgress, Qt::QueuedConnection);
+    connect(m_manager, &PackageManager::packagesStatusChanged, m_packagesModel, &PackagesModel::setPackagesStatus, Qt::QueuedConnection);
 
     m_manager->moveToThread(m_backgroundThread);
 
@@ -70,8 +71,6 @@ void MlsManager::updatePackage(const QString &code)
     if (!package.isValid())
         return;
 
-    qDebug() << package.packageId();
-
     m_packagesModel->setLoading(true);
     emit requestUpdatePackage(QStringList() << package.packageId(Package::Update));
 }
@@ -81,7 +80,7 @@ void MlsManager::updatePackages()
     QStringList ids;
     for (const auto pkg : m_packagesModel->packages()) {
         if (pkg.updateAvailable)
-            ids.append(pkg.packageId());
+            ids.append(pkg.packageId(Package::Update));
     }
 
     requestUpdatePackage(ids);

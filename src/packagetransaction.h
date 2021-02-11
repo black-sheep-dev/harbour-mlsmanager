@@ -11,6 +11,8 @@ public:
 
     quint8 operation() const;
     void setOperation(quint8 operation);
+    QVariant payload() const;
+    void setPayload(const QVariant &payload);
 
     // package functions
     void getPackageDetails(const QStringList &ids);
@@ -26,6 +28,7 @@ public:
 
 private:
     quint8 m_operation{0};
+    QVariant m_payload;
 
 signals:
     void Details(const QVariantMap &details);

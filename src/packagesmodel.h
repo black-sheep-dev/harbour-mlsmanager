@@ -40,6 +40,7 @@ signals:
     void updatesAvailableChanged(bool updatesAvailable);
 
 public slots:
+    void setPackagesStatus(const QStringList &packageIds, quint8 status);
     void setPackageProgress(const QString &packageId, quint8 percentage);
     void setPackages(const QList<Package> &packages);
 

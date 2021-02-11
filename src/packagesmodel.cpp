@@ -31,6 +31,45 @@ bool PackagesModel::updatesAvailable() const
     return m_updatesAvailable;
 }
 
+void PackagesModel::setPackagesStatus(const QStringList &packageIds, quint8 status)
+{
+    setLoading(false);
+
+    for (const auto &packageId : packageIds) {
+        for (int i = 0; i < m_packages.count(); ++i) {
+            qDebug() << m_packages.at(i).packageId();
+            qDebug() << packageId;
+            if (m_packages.at(i).packageId().section(';', 0, 0) != packageId.section(';', 0, 0))
+                continue;
+
+            switch (status) {
+            case Package::Install:
+                m_packages[i].installed = true;
+                break;
+
+            case Package::Remove:
+                m_packages[i].installed = false;
+                break;
+
+            case Package::Update:
+                m_packages[i].updateAvailable = false;
+                break;
+
+            default:
+                continue;
+            }
+
+            m_packages[i].progress = 0;
+
+            const QModelIndex idx = index(i, 0, QModelIndex());
+            emit dataChanged(idx, idx, QVector<int>() << ProgressRole << InstalledRole << UpdateAvailableRole);
+
+
+            break;
+        }
+    }
+}
+
 void PackagesModel::setPackageProgress(const QString &packageId, quint8 percentage)
 {
     for (int i = 0; i < m_packages.count(); ++i) {

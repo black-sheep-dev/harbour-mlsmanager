@@ -72,7 +72,7 @@
     </message>
     <message>
         <source>Update all packages</source>
-        <translation>Alle Pakete aktualsieren</translation>
+        <translation>Alle Pakete aktualisieren</translation>
     </message>
     <message>
         <source>Updating all packages</source>

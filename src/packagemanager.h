@@ -50,6 +50,7 @@ signals:
     void operationError(const QString &msg);
     void operationProgress(const QString &packageId, quint8 percentage);
     void operationSuccess(const QString &msg);
+    void packagesStatusChanged(const QStringList &packageIds, quint8 status);
     void packagesAvailable(const QList<Package> &packages);
 
 public slots:

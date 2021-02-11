@@ -161,13 +161,17 @@ void PackageManager::onFinished(quint32 exit, quint32 runtime)
 
     case PackageInstall:
         msg = tr("Package installed");
+        emit packagesStatusChanged(t->payload().toStringList(), Package::Install);
+        break;
 
     case PackageRemove:
         msg = tr("Package removed");
+        emit packagesStatusChanged(t->payload().toStringList(), Package::Remove);
+        break;
 
     case PackageUpdate:
         msg = tr("Package(s) updated");
-        refreshRepo();
+        emit packagesStatusChanged(t->payload().toStringList(), Package::Update);
         break;
 
     case PackageSearch:
@@ -237,6 +241,8 @@ void PackageManager::startJob()
 
     auto t = m_packageDaemon->transaction();
     t->setOperation(job.operation);
+    t->setPayload(job.payload);
+
     connect(t, &PackageTransaction::Details, this, &PackageManager::onDetails, Qt::QueuedConnection);
     connect(t, &PackageTransaction::Finished, this, &PackageManager::onFinished, Qt::QueuedConnection);
     connect(t, &PackageTransaction::ErrorCode, this, &PackageManager::onErrorCode, Qt::QueuedConnection);

@@ -32,6 +32,16 @@ void PackageTransaction::setOperation(quint8 operation)
     m_operation = operation;
 }
 
+QVariant PackageTransaction::payload() const
+{
+    return m_payload;
+}
+
+void PackageTransaction::setPayload(const QVariant &payload)
+{
+    m_payload = payload;
+}
+
 void PackageTransaction::getPackageDetails(const QStringList &ids)
 {
     asyncCall(QStringLiteral("GetDetails"), ids);
@@ -74,6 +84,3 @@ void PackageTransaction::refreshRepo()
               "refresh-now",
               "true");
 }
-
-
-

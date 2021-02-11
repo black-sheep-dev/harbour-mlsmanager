@@ -36,6 +36,14 @@ Maybe I'll increase the frequency in the future.
 ## Available Countries
 At the moment 185 different countries are available. That should be almost all. If you need more let me know in comment section.
 
+## How to use
+
+In order to make use of the offline data, the option "High-accuracy positioning" or at least "Battery saving mode" must be active in the location settings of Sailfish OS .
+
+## Storage Location
+
+Packages with version >2021.02.10-1 the installation path is in "/home/.system/usr/share/geoclue-provider-mlsdb/".  So no worry about size on ROOT partition. Thanks abranson for his suggestion.
+
 ## Translations
 
 - English
