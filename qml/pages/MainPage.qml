@@ -34,12 +34,11 @@ Page {
                         searchField.text = ""
                     }
                 }
-            }
-            /*
-            MenuItem {
-                text: "Test"
-                onClicked: MlsManager.testSlot()
-            }*/
+            } 
+//            MenuItem {
+//                text: "Test"
+//                onClicked: MlsManager.testSlot()
+//            }
         }
 
         RemorsePopup { id: remorsePopup }

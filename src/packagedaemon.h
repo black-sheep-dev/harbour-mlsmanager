@@ -11,7 +11,6 @@ class PackageDaemon : public QDBusAbstractInterface
 public:
     explicit PackageDaemon(QObject *parent = nullptr);
 
-    bool canAuthorize();
     PackageTransaction *transaction();
 };
 

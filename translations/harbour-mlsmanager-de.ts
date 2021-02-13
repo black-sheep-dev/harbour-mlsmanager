@@ -136,5 +136,13 @@
         <source>Updates of MLS offline packages are available.</source>
         <translation>Aktualisierungen für MLS offline Pakete sind verfügbar.</translation>
     </message>
+    <message>
+        <source>Error</source>
+        <translation>Fehler</translation>
+    </message>
+    <message>
+        <source>Operation failed</source>
+        <translation>Vorgang fehlgeschlagen</translation>
+    </message>
 </context>
 </TS>

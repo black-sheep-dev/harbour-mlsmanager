@@ -15,22 +15,13 @@ PackageDaemon::PackageDaemon(QObject *parent) :
 
 }
 
-bool PackageDaemon::canAuthorize()
-{
-    auto reply = call(QStringLiteral("CanAuthorize"), QStringLiteral("org.freedesktop.packagekit.install-untrusted"));
-
-    qDebug() << reply;
-
-    return true;
-}
-
 PackageTransaction *PackageDaemon::transaction()
 {
     auto reply = call(QStringLiteral("CreateTransaction"));
 
     const QString path = qvariant_cast<QDBusObjectPath>(reply.arguments().first()).path();
 
-    auto *t = new PackageTransaction(
+    auto t = new PackageTransaction(
         path,
         parent()
     );

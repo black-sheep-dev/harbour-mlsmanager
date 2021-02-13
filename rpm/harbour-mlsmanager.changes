@@ -1,3 +1,7 @@
+* Sat Feb 13 2021 Black Sheep <blacksheep@nubecula.org> 0.1.5-1
+- Error notifications
+- Bugfixes
+
 * Thu Feb 11 2021 Black Sheep <blacksheep@nubecula.org> 0.1.4-1
 - Fixed bug when install all available package updates
 - Fixed translations

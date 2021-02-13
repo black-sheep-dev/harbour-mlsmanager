@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
 #ifndef QT_DEBUG
     auto uri = "org.nubecula.harbour.mlsmanager";
 #else
-#   define uri "org.nubecula.harbour.mlsmanager"
+#define uri "org.nubecula.harbour.mlsmanager"
 #endif
 
 #ifdef QT_DEBUG

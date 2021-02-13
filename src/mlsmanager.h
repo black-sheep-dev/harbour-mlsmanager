@@ -45,6 +45,7 @@ public slots:
     Q_INVOKABLE void testSlot();
 
 private slots:
+    void onErrorAvailable(const QString &msg);
     void onUpdatesAvailable(bool available);
 
 private:

@@ -34,6 +34,11 @@ void PackageManager::installPackages(const QStringList &ids)
     job.operation = PackageInstall;
     job.payload = ids;
 
+
+#ifdef QT_DEBUG
+    qDebug() << "INSTALL PACKAGE";
+    qDebug() << ids;
+#endif
     enqueueJob(job);
 }
 
@@ -42,6 +47,11 @@ void PackageManager::removePackages(const QStringList &ids)
     QueuedJob job;
     job.operation = PackageRemove;
     job.payload = ids;
+
+#ifdef QT_DEBUG
+    qDebug() << "REMOVE PACKAGE";
+    qDebug() << ids;
+#endif
 
     enqueueJob(job);
 }
@@ -60,6 +70,11 @@ void PackageManager::updatePackages(const QStringList &ids)
     QueuedJob job;
     job.operation = PackageUpdate;
     job.payload = ids;
+
+#ifdef QT_DEBUG
+    qDebug() << "UPDATE PACKAGE";
+    qDebug() << ids;
+#endif
 
     enqueueJob(job);
 }
@@ -91,6 +106,8 @@ void PackageManager::onDetails(const QVariantMap &details)
 #ifdef QT_DEBUG
     qDebug() << "DETAILS";
     qDebug() << details;
+#else
+    Q_UNUSED(details);
 #endif
 }
 
@@ -100,6 +117,9 @@ void PackageManager::onErrorCode(quint32 code, const QString &details)
     qDebug() << "ERROR CODE";
     qDebug() << code;
     qDebug() << details;
+#else
+    Q_UNUSED(code)
+    Q_UNUSED(details)
 #endif
 
     auto t = qobject_cast<PackageTransaction *>(sender());
@@ -139,6 +159,8 @@ void PackageManager::onFinished(quint32 exit, quint32 runtime)
     qDebug() << "FINISHED";
     qDebug() << exit;
     qDebug() << runtime;
+#else
+    Q_UNUSED(runtime)
 #endif
 
     if (exit != 1) {
@@ -195,6 +217,8 @@ void PackageManager::onPackage(quint32 info, const QString &packageId, const QSt
     qDebug() << info;
     qDebug() << packageId;
     qDebug() << summary;
+#else
+    Q_UNUSED(info)
 #endif
 
     auto t = qobject_cast<PackageTransaction *>(sender());
@@ -222,7 +246,10 @@ void PackageManager::onItemProgress(const QString &id, uint status, uint percent
     qDebug() << id;
     qDebug() << status;
     qDebug() << percentage;
+#else
+    Q_UNUSED(status)
 #endif
+
 
     emit operationProgress(id, percentage);
 }

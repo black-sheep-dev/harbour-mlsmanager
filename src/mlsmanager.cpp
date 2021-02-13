@@ -17,6 +17,7 @@ MlsManager::MlsManager(QObject *parent) :
 
     connect(m_manager, &PackageManager::packagesAvailable, m_packagesModel, &PackagesModel::setPackages, Qt::QueuedConnection);
     connect(m_manager, &PackageManager::operationError, this, &MlsManager::operationError, Qt::QueuedConnection);
+    connect(m_manager, &PackageManager::operationError, this, &MlsManager::onErrorAvailable, Qt::QueuedConnection);
     connect(m_manager, &PackageManager::operationSuccess, this, &MlsManager::operationSuccess, Qt::QueuedConnection);
     connect(m_manager, &PackageManager::operationProgress, m_packagesModel, &PackagesModel::setPackageProgress, Qt::QueuedConnection);
     connect(m_manager, &PackageManager::packagesStatusChanged, m_packagesModel, &PackagesModel::setPackagesStatus, Qt::QueuedConnection);
@@ -78,12 +79,12 @@ void MlsManager::updatePackage(const QString &code)
 void MlsManager::updatePackages()
 {
     QStringList ids;
-    for (const auto pkg : m_packagesModel->packages()) {
+    for (const auto &pkg : m_packagesModel->packages()) {
         if (pkg.updateAvailable)
             ids.append(pkg.packageId(Package::Update));
     }
 
-    requestUpdatePackage(ids);
+    emit requestUpdatePackage(ids);
 }
 
 void MlsManager::getUpdates()
@@ -104,7 +105,14 @@ void MlsManager::refreshRepo()
 
 void MlsManager::testSlot()
 {
-    emit updatesAvailable();
+    emit operationError(QStringLiteral("Error occured"));
+}
+
+void MlsManager::onErrorAvailable(const QString &msg)
+{
+    Q_UNUSED(msg)
+
+    m_packagesModel->setLoading(false);
 }
 
 void MlsManager::onUpdatesAvailable(bool available)

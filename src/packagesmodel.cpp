@@ -37,22 +37,27 @@ void PackagesModel::setPackagesStatus(const QStringList &packageIds, quint8 stat
 
     for (const auto &packageId : packageIds) {
         for (int i = 0; i < m_packages.count(); ++i) {
-            qDebug() << m_packages.at(i).packageId();
-            qDebug() << packageId;
             if (m_packages.at(i).packageId().section(';', 0, 0) != packageId.section(';', 0, 0))
                 continue;
+
+            const QString version = packageId.section(";", 1, 1);
 
             switch (status) {
             case Package::Install:
                 m_packages[i].installed = true;
+                m_packages[i].installedVersion = version;
+                m_packages[i].latestVersion = version;
                 break;
 
             case Package::Remove:
                 m_packages[i].installed = false;
+                m_packages[i].latestVersion = version;
                 break;
 
             case Package::Update:
                 m_packages[i].updateAvailable = false;
+                m_packages[i].installedVersion = version;
+                m_packages[i].latestVersion = version;
                 break;
 
             default:
@@ -62,7 +67,13 @@ void PackagesModel::setPackagesStatus(const QStringList &packageIds, quint8 stat
             m_packages[i].progress = 0;
 
             const QModelIndex idx = index(i, 0, QModelIndex());
-            emit dataChanged(idx, idx, QVector<int>() << ProgressRole << InstalledRole << UpdateAvailableRole);
+            emit dataChanged(idx, idx,
+                             QVector<int>()
+                             << ProgressRole
+                             << InstalledRole
+                             << UpdateAvailableRole
+                             << InstalledVersionRole
+                             << LatestVersionRole);
 
 
             break;
