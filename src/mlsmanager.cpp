@@ -50,7 +50,7 @@ void MlsManager::installPackage(const QString &code)
     if (!package.isValid())
         return;
 
-    m_packagesModel->setLoading(true);
+    m_packagesModel->setBusy(true);
     emit requestInstallPackage(QStringList() << package.packageId(Package::Install));
 }
 
@@ -61,7 +61,7 @@ void MlsManager::removePackage(const QString &code)
     if (!package.isValid())
         return;
 
-    m_packagesModel->setLoading(true);
+    m_packagesModel->setBusy(true);
     emit requestRemovePackage(QStringList() << package.packageId(Package::Remove));
 }
 
@@ -72,7 +72,7 @@ void MlsManager::updatePackage(const QString &code)
     if (!package.isValid())
         return;
 
-    m_packagesModel->setLoading(true);
+    m_packagesModel->setBusy(true);
     emit requestUpdatePackage(QStringList() << package.packageId(Package::Update));
 }
 
@@ -84,6 +84,7 @@ void MlsManager::updatePackages()
             ids.append(pkg.packageId(Package::Update));
     }
 
+    m_packagesModel->setBusy(true);
     emit requestUpdatePackage(ids);
 }
 

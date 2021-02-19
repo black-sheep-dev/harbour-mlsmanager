@@ -10,7 +10,7 @@ Page {
 
     SilicaFlickable {
         PullDownMenu {
-            busy: MlsManager.packagesModel().loading
+            busy: MlsManager.packagesModel().busy
             MenuItem {
                 text: qsTr("About")
                 onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
@@ -39,6 +39,12 @@ Page {
 //                text: "Test"
 //                onClicked: MlsManager.testSlot()
 //            }
+        }
+
+        PageBusyIndicator {
+            size: BusyIndicatorSize.Large
+            anchors.centerIn: parent
+            running: MlsManager.packagesModel().loading
         }
 
         RemorsePopup { id: remorsePopup }
@@ -88,6 +94,12 @@ Page {
             property bool showSearch: false
 
             id: listView
+
+            opacity: MlsManager.packagesModel().loading ? 0.0 : 1.0
+
+            Behavior on opacity {
+                FadeAnimation {}
+            }
 
             width: parent.width
             anchors.top: header.bottom

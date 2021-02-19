@@ -21,6 +21,11 @@ QList<Package> PackagesModel::packages() const
     return m_packages;
 }
 
+bool PackagesModel::busy() const
+{
+    return m_busy;
+}
+
 bool PackagesModel::loading() const
 {
     return m_loading;
@@ -33,7 +38,7 @@ bool PackagesModel::updatesAvailable() const
 
 void PackagesModel::setPackagesStatus(const QStringList &packageIds, quint8 status)
 {
-    setLoading(false);
+    setBusy(false);
 
     for (const auto &packageId : packageIds) {
         for (int i = 0; i < m_packages.count(); ++i) {
@@ -114,6 +119,15 @@ void PackagesModel::setPackages(const QList<Package> &packages)
     endResetModel();
 
     setLoading(false);
+}
+
+void PackagesModel::setBusy(bool busy)
+{
+    if (m_busy == busy)
+        return;
+
+    m_busy = busy;
+    emit busyChanged(m_busy);
 }
 
 void PackagesModel::setLoading(bool loading)
