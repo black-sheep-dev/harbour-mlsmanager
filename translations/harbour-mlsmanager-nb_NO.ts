@@ -1,147 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="en">
+<TS version="2.1" language="nb_NO">
 <context>
     <name>AboutPage</name>
     <message>
         <source>About</source>
-        <translation>About</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>MLS Manager</source>
-        <translation>MLS Manager</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Manager for Mozilla Location Service offline packages for Sailfish OS.</source>
-        <translation>Manager for Mozilla Location Service offline packages for Sailfish OS.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sources</source>
-        <translation>Sources</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Donations</source>
-        <translation>Donations</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>If you like my work you can buy me a beer.</source>
-        <translation>If you like my work you can buy me a beer.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>About</source>
-        <translation>About</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>Refresh</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hide search</source>
-        <translation>Hide search</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Search</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Offline Packages</source>
-        <translation>Offline packages</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Install</source>
-        <translation>Install</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation>Remove</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No offline packages available</source>
-        <translation>No offline packages available</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation>Check your internet connection</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Update</source>
-        <translation>Update</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Update all packages</source>
-        <translation>Update all packages</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Updating all packages</source>
-        <translation>Updating all packages</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Installing offline package</source>
-        <translation>Installing offline package</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing offline package</source>
-        <translation>Removing offline package</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Updating offline package</source>
-        <translation>Updating offline package</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>PackageManager</name>
     <message>
         <source>Failed to refresh repository</source>
-        <translation>Failed to refresh repository</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Failed to remove package</source>
-        <translation>Failed to remove package</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Failed to install package</source>
-        <translation>Failed to install package</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Failed to update package(s)</source>
-        <translation>Failed to update package(s)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Package installed</source>
-        <translation>Package installed</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Package removed</source>
-        <translation>Package removed</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Package(s) updated</source>
-        <translation>Package(s) updated</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>harbour-mlsmanager</name>
     <message>
         <source>Updates available</source>
-        <translation>Updates available</translation>
-    </message>
-    <message>
-        <source>Click to show updates</source>
-        <translation>Click to show updates</translation>
-    </message>
-    <message>
-        <source>Updates of MLS offline packages are available.</source>
-        <translation>Updates of MLS offline packages are available.</translation>
-    </message>
-    <message>
-        <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Operation failed</source>
+        <source>Click to show updates</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Updates of MLS offline packages are available.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
