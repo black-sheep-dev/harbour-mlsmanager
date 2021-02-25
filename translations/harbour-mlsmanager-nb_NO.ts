@@ -5,136 +5,136 @@
     <name>AboutPage</name>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Om</translation>
     </message>
     <message>
         <source>MLS Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>MLS-håndterer</translation>
     </message>
     <message>
         <source>Manager for Mozilla Location Service offline packages for Sailfish OS.</source>
-        <translation type="unfinished"></translation>
+        <translation>Behandling av frakoblede pakker for Mozilla-posisjonstjeneste, for Sailfish OS.</translation>
     </message>
     <message>
         <source>Sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Kilder</translation>
     </message>
     <message>
         <source>Donations</source>
-        <translation type="unfinished"></translation>
+        <translation>Donasjoner</translation>
     </message>
     <message>
         <source>If you like my work you can buy me a beer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Du kan rive i en øl hvis du vil.</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Om</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Gjenoppfrisk</translation>
     </message>
     <message>
         <source>Hide search</source>
-        <translation type="unfinished"></translation>
+        <translation>Skjul søk</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Søk</translation>
     </message>
     <message>
         <source>Offline Packages</source>
-        <translation type="unfinished"></translation>
+        <translation>Frakoblede pakker</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Installer</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Fjern</translation>
     </message>
     <message>
         <source>No offline packages available</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen frakoblede pakker tilgjengelig</translation>
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Sjekk din internett-tilknytning</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Oppgrader</translation>
     </message>
     <message>
         <source>Update all packages</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Oppgrader alle pakker</translation>
     </message>
     <message>
         <source>Updating all packages</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Oppgraderer alle pakker…</translation>
     </message>
     <message>
         <source>Installing offline package</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Installerer frakoblet pakke …</translation>
     </message>
     <message>
         <source>Removing offline package</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Fjerner frakoblet pakke …</translation>
     </message>
     <message>
         <source>Updating offline package</source>
-        <translation type="unfinished"></translation>
+        <translation>Oppgraderer frakoblet pakke</translation>
     </message>
 </context>
 <context>
     <name>PackageManager</name>
     <message>
         <source>Failed to refresh repository</source>
-        <translation type="unfinished"></translation>
+        <translation>Klarte ikke å gjenoppfriske pakkebrønn</translation>
     </message>
     <message>
         <source>Failed to remove package</source>
-        <translation type="unfinished"></translation>
+        <translation>Klarte ikke å fjerne pakke</translation>
     </message>
     <message>
         <source>Failed to install package</source>
-        <translation type="unfinished"></translation>
+        <translation>Klarte ikke å installere pakke</translation>
     </message>
     <message>
         <source>Failed to update package(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Klarte ikke å oppgradere pakke(r)</translation>
     </message>
     <message>
         <source>Package installed</source>
-        <translation type="unfinished"></translation>
+        <translation>Pakke installert</translation>
     </message>
     <message>
         <source>Package removed</source>
-        <translation type="unfinished"></translation>
+        <translation>Pakke fjernet</translation>
     </message>
     <message>
         <source>Package(s) updated</source>
-        <translation type="unfinished"></translation>
+        <translation>Pakke(r) oppgradert</translation>
     </message>
 </context>
 <context>
     <name>harbour-mlsmanager</name>
     <message>
         <source>Updates available</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Oppgraderinger tilgjengelig</translation>
     </message>
     <message>
         <source>Click to show updates</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Klikk for å vise oppgraderinger</translation>
     </message>
     <message>
         <source>Updates of MLS offline packages are available.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Du kan installere nye versjoner av frakoblede MLS-pakker.</translation>
     </message>
 </context>
 </TS>
