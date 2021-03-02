@@ -68,23 +68,23 @@
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished">Oppgrader</translation>
+        <translation>Oppgrader</translation>
     </message>
     <message>
         <source>Update all packages</source>
-        <translation type="unfinished">Oppgrader alle pakker</translation>
+        <translation>Oppgrader alle pakker</translation>
     </message>
     <message>
         <source>Updating all packages</source>
-        <translation type="unfinished">Oppgraderer alle pakker…</translation>
+        <translation>Oppgraderer alle pakker</translation>
     </message>
     <message>
         <source>Installing offline package</source>
-        <translation type="unfinished">Installerer frakoblet pakke …</translation>
+        <translation>Installerer frakoblet pakke</translation>
     </message>
     <message>
         <source>Removing offline package</source>
-        <translation type="unfinished">Fjerner frakoblet pakke …</translation>
+        <translation>Fjerner frakoblet pakke</translation>
     </message>
     <message>
         <source>Updating offline package</source>
@@ -126,15 +126,23 @@
     <name>harbour-mlsmanager</name>
     <message>
         <source>Updates available</source>
-        <translation type="unfinished">Oppgraderinger tilgjengelig</translation>
+        <translation>Oppgraderinger tilgjengelig</translation>
     </message>
     <message>
         <source>Click to show updates</source>
-        <translation type="unfinished">Klikk for å vise oppgraderinger</translation>
+        <translation>Klikk for å vise oppgraderinger</translation>
     </message>
     <message>
         <source>Updates of MLS offline packages are available.</source>
-        <translation type="unfinished">Du kan installere nye versjoner av frakoblede MLS-pakker.</translation>
+        <translation>Du kan installere nye versjoner av frakoblede MLS-pakker.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Operation failed</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

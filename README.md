@@ -48,8 +48,8 @@ Packages with version >2021.02.10-1 the installation path is in "/home/.system/u
 
 - English
 - German
-- Norvegian
-- Slovak  
+- Norvegian (by comradekingu)
+- Slovak (by okruhliak) 
   
 If you missing your native language you are welcome to support this project with your translation.
 
