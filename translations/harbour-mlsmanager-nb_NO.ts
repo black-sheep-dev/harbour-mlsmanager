@@ -24,8 +24,16 @@
         <translation>Donasjoner</translation>
     </message>
     <message>
-        <source>If you like my work you can buy me a beer.</source>
-        <translation>Du kan rive i en øl hvis du vil.</translation>
+        <source>If you like my work why not buy me a beer?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Donate with PayPal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Donate with Liberpay</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

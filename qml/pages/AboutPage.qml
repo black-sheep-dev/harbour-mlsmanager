@@ -70,20 +70,21 @@ Page {
             SectionHeader{
                 text: qsTr("Sources")
             }
+
             BackgroundItem{
                 width: parent.width
                 height: Theme.itemSizeMedium
-
                 Row{
-                    x: Theme.horizontalPageMargin
-                    width: parent.width - 2 * x
+                    x : Theme.horizontalPageMargin
+                    width: parent.width - 2*x
                     height: parent.height
-
-                    spacing: Theme.paddingMedium
+                    spacing:Theme.paddingMedium
 
                     Image {
                         width: parent.height
                         height: width
+                        fillMode: Image.PreserveAspectFit
+                        anchors.verticalCenter: parent.verticalCenter
                         source: "qrc:///icons/git"
                     }
 
@@ -105,19 +106,30 @@ Page {
                 text: qsTr("Donations")
             }
 
+            Label {
+                x : Theme.horizontalPageMargin
+                width: parent.width - 2*x
+
+                wrapMode: Text.Wrap
+                font.pixelSize: Theme.fontSizeSmall
+                text: qsTr("If you like my work why not buy me a beer?")
+            }
+
             BackgroundItem{
                 width: parent.width
                 height: Theme.itemSizeMedium
 
                 Row{
                     x: Theme.horizontalPageMargin
-                    width: parent.width - 2 * x
+                    width: parent.width - 2*x
                     height: parent.height
                     spacing:Theme.paddingMedium
 
                     Image {
                         width: parent.height
                         height: width
+                        fillMode: Image.PreserveAspectFit
+                        anchors.verticalCenter: parent.verticalCenter
                         source: "qrc:///icons/paypal"
                     }
                     Label{
@@ -126,10 +138,40 @@ Page {
                         wrapMode: Text.WrapAnywhere
                         font.pixelSize: Theme.fontSizeSmall
                         color: parent.parent.pressed ? Theme.highlightColor : Theme.primaryColor
-                        text: qsTr("If you like my work you can buy me a beer.")
+                        text: qsTr("Donate with PayPal")
                     }
                 }
                 onClicked: Qt.openUrlExternally("https://www.paypal.com/paypalme/nubecula/1")
+            }
+
+            BackgroundItem{
+                width: parent.width
+                height: Theme.itemSizeMedium
+
+                Row{
+                    x: Theme.horizontalPageMargin
+                    width: parent.width - 2*x
+                    height: parent.height
+
+                    spacing:Theme.paddingMedium
+
+                    Image {
+                        width: parent.height
+                        height: width
+                        fillMode: Image.PreserveAspectFit
+                        anchors.verticalCenter: parent.verticalCenter
+                        source: "qrc:///icons/liberpay"
+                    }
+                    Label{
+                        width: parent.width - parent.height - parent.spacing
+                        anchors.verticalCenter: parent.verticalCenter
+                        wrapMode: Text.WrapAnywhere
+                        font.pixelSize: Theme.fontSizeSmall
+                        color: parent.parent.pressed ? Theme.highlightColor : Theme.primaryColor
+                        text: qsTr("Donate with Liberpay")
+                    }
+                }
+                onClicked: Qt.openUrlExternally("https://liberapay.com/black-sheep-dev/donate")
             }
         }
     }

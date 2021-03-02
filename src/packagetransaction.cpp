@@ -7,9 +7,9 @@
 #include "constants.h"
 #include "packagemanager.h"
 
-#include <Transaction>
-
-constexpr quint64 FlagNone{PackageKit::Transaction::TransactionFlagNone};
+//#include <Transaction>
+//constexpr quint64 FlagNone{PackageKit::Transaction::TransactionFlagNone};
+constexpr quint64 FlagNone{1};
 
 PackageTransaction::PackageTransaction(const QString &path, QObject *parent) :
     QDBusAbstractInterface(

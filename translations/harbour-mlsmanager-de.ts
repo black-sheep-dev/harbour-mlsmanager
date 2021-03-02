@@ -24,8 +24,16 @@
         <translation>Spenden</translation>
     </message>
     <message>
-        <source>If you like my work you can buy me a beer.</source>
-        <translation>Wenn dir meine Arbeit gefällt, kannst du mir ein Bier ausgeben.</translation>
+        <source>If you like my work why not buy me a beer?</source>
+        <translation>Wenn Du meine Arbeit magst, warum gibtst du mir nicht einfach ein Bier aus?</translation>
+    </message>
+    <message>
+        <source>Donate with PayPal</source>
+        <translation>Spenden via PayPal</translation>
+    </message>
+    <message>
+        <source>Donate with Liberpay</source>
+        <translation>Spenden via Liberpay</translation>
     </message>
 </context>
 <context>
