@@ -5,136 +5,136 @@
     <name>AboutPage</name>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>O MLS Manager</translation>
     </message>
     <message>
         <source>MLS Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>MLS Manager</translation>
     </message>
     <message>
         <source>Manager for Mozilla Location Service offline packages for Sailfish OS.</source>
-        <translation type="unfinished"></translation>
+        <translation>Menedżer pakietów offline Mozilla Location Service dla Sailfish OS.</translation>
     </message>
     <message>
         <source>Sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Źródła</translation>
     </message>
     <message>
         <source>Donations</source>
-        <translation type="unfinished"></translation>
+        <translation>Dotacje</translation>
     </message>
     <message>
         <source>If you like my work you can buy me a beer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeśli podoba ci się moja praca, możesz kupić mi piwo.</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>O MLS Manager</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Odśwież</translation>
     </message>
     <message>
         <source>Hide search</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukryj wyszukiwanie</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyszukaj</translation>
     </message>
     <message>
         <source>Offline Packages</source>
-        <translation type="unfinished"></translation>
+        <translation>Pakiety offline</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Instaluj</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <source>No offline packages available</source>
-        <translation type="unfinished"></translation>
+        <translation>Brak dostępnych pakietów offline</translation>
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Sprawdź swoje połączenie z internetem</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktualizuj</translation>
     </message>
     <message>
         <source>Update all packages</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktualizuj wszystkie pakiety</translation>
     </message>
     <message>
         <source>Updating all packages</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktualizowanie wszystkich pakietów</translation>
     </message>
     <message>
         <source>Installing offline package</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalowanie pakietów offline</translation>
     </message>
     <message>
         <source>Removing offline package</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuwanie pakietów offline</translation>
     </message>
     <message>
         <source>Updating offline package</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktualizowanie pakietów offline</translation>
     </message>
 </context>
 <context>
     <name>PackageManager</name>
     <message>
         <source>Failed to refresh repository</source>
-        <translation type="unfinished"></translation>
+        <translation>Odświeżenie repozytoriów nie powiodło się</translation>
     </message>
     <message>
         <source>Failed to remove package</source>
-        <translation type="unfinished"></translation>
+        <translation>Usunięcie pakietu nie powiodło się</translation>
     </message>
     <message>
         <source>Failed to install package</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalacja pakietu nie powiodła się</translation>
     </message>
     <message>
         <source>Failed to update package(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktualizacja pakietów nie powiodła się</translation>
     </message>
     <message>
         <source>Package installed</source>
-        <translation type="unfinished"></translation>
+        <translation>Pakiet zainstalowany</translation>
     </message>
     <message>
         <source>Package removed</source>
-        <translation type="unfinished"></translation>
+        <translation>Pakiet usunięty</translation>
     </message>
     <message>
         <source>Package(s) updated</source>
-        <translation type="unfinished"></translation>
+        <translation>Pakiety zaktualizowane</translation>
     </message>
 </context>
 <context>
     <name>harbour-mlsmanager</name>
     <message>
         <source>Updates available</source>
-        <translation type="unfinished"></translation>
+        <translation>Dostępne aktualizacje</translation>
     </message>
     <message>
         <source>Click to show updates</source>
-        <translation type="unfinished"></translation>
+        <translation>Kliknij, by pokazać aktualizacje</translation>
     </message>
     <message>
         <source>Updates of MLS offline packages are available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktualizacje pakietów MLS offline są dostępne.</translation>
     </message>
     <message>
         <source>Error</source>
