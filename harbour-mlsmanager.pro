@@ -10,7 +10,7 @@
 #   - translation filenames have to be changed
 
 # VERSION
-VERSION = 0.1.7
+VERSION = 0.1.8
 DEFINES += APP_VERSION=\\\"$$VERSION\\\"
 
 # The name of your application
@@ -61,6 +61,7 @@ CONFIG += sailfishapp_i18n
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += translations/harbour-mlsmanager-de.ts \
     translations/harbour-mlsmanager-nb_NO.ts \
+    translations/harbour-mlsmanager-pl.ts \
     translations/harbour-mlsmanager-sk.ts
 
 HEADERS += \

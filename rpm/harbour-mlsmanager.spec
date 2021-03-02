@@ -9,7 +9,7 @@ Name:       harbour-mlsmanager
 # << macros
 
 Summary:    MLS Manager
-Version:    0.1.7
+Version:    0.1.8
 Release:    1
 Group:      Location/Location Framework
 License:    MIT
@@ -24,7 +24,6 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(nemonotifications-qt5)
-BuildRequires:  PackageKit-Qt5-devel
 BuildRequires:  desktop-file-utils
 
 %description

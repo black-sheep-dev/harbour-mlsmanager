@@ -49,13 +49,14 @@ Packages with version >2021.02.10-1 the installation path is in "/home/.system/u
 - English
 - German
 - Norvegian (by comradekingu)
-- Slovak (by okruhliak) 
+- Polish (by atlochowski)
+- Slovak (by okruhliak)
   
 If you missing your native language you are welcome to support this project with your translation.
 
-Translations are possible on Transifex:
+Translations are possible on weblate.org:
 
-https://www.transifex.com/nubecula/harbour-mlsmanager/
+[https://hosted.weblate.org/projects/harbour-mlsmanager](https://hosted.weblate.org/projects/harbour-mlsmanager)
 
 ## Thanks
 I want to thank Petr Tsymbarovich(osetr) for his work on [Storeman](https://openrepos.net/content/osetr/storeman). His code helped me to get an idea how to handle repositories.

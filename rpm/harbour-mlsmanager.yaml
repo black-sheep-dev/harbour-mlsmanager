@@ -1,6 +1,6 @@
 Name: harbour-mlsmanager
 Summary: MLS Manager
-Version: 0.1.7
+Version: 0.1.8
 Release: 1
 # The contents of the Group field should be one of the groups listed here:
 # https://github.com/mer-tools/spectacle/blob/master/data/GROUPS
@@ -25,8 +25,8 @@ PkgConfigBR:
   - nemonotifications-qt5 
 
 # Build dependencies without a pkgconfig setup can be listed here
-PkgBR:
-    - PackageKit-Qt5-devel
+#PkgBR:
+#    - PackageKit-Qt5-devel
 
 # Runtime dependencies which are not automatically detected
 Requires:
