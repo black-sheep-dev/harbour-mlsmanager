@@ -35,6 +35,14 @@
         <source>Donate with Liberpay</source>
         <translation>Spenden via Liberpay</translation>
     </message>
+    <message>
+        <source>Translations</source>
+        <translation>Übersetzungen</translation>
+    </message>
+    <message>
+        <source>Your language is not available? You are welcome to support this project by translating it on my self hosted Weblate server.</source>
+        <translation>Deine Sprache ist nicht verfügbar? Du kannst das Projekt gerne unterstüzten, indem Du eine Übersetzung auf meinen selbst gehosteten Weblate Server machst.</translation>
+    </message>
 </context>
 <context>
     <name>MainPage</name>
