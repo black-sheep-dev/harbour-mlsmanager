@@ -54,7 +54,7 @@ Packages with version >2021.02.10-1 the installation path is in "/home/.system/u
   
 Your language is not available? You are welcome to support this project by translating it on my self hosted Weblate server:
 
-[https://weblate.nubecula.org/projects/harbour-takeoff/](https://weblate.nubecula.org/projects/harbour-takeoff/)
+[https://weblate.nubecula.org/projects/harbour-mlsmanager/](https://weblate.nubecula.org/projects/harbour-mlsmanager/)
 
 ## Thanks
 I want to thank Petr Tsymbarovich(osetr) for his work on [Storeman](https://openrepos.net/content/osetr/storeman). His code helped me to get an idea how to handle repositories.
