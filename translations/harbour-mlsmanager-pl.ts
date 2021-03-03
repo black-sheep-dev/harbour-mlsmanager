@@ -25,23 +25,23 @@
     </message>
     <message>
         <source>If you like my work why not buy me a beer?</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeśli podoba Ci się moja praca, dlaczego nie postawisz mi piwa?</translation>
     </message>
     <message>
         <source>Donate with PayPal</source>
-        <translation type="unfinished"></translation>
+        <translation>Wspomóż za pomocą PayPal</translation>
     </message>
     <message>
         <source>Donate with Liberpay</source>
-        <translation type="unfinished"></translation>
+        <translation>Wspomóż za pomocą Librepay</translation>
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Tłumaczenia</translation>
     </message>
     <message>
         <source>Your language is not available? You are welcome to support this project by translating it on my self hosted Weblate server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Twój język nie jest dostępny? Możesz wesprzeć ten projekt, tłumacząc go na moim własnym serwerze Weblate.</translation>
     </message>
 </context>
 <context>
@@ -154,11 +154,11 @@
     </message>
     <message>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Błąd</translation>
     </message>
     <message>
         <source>Operation failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Operacja nie powiodła się</translation>
     </message>
 </context>
 </TS>
