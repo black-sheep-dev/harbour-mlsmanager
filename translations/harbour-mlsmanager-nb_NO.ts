@@ -106,6 +106,10 @@
         <source>Updating offline package</source>
         <translation>Oppgraderer frakoblet pakke</translation>
     </message>
+    <message>
+        <source>installed</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PackageManager</name>

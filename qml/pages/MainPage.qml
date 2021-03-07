@@ -175,10 +175,33 @@ Page {
                         source: "/usr/share/" + Qt.application.name + "/flags/" + model.code + ".png"
                     }
 
-                    Label {
+                    Column {
                         width: parent.width - flagIcon.width - selectedIcon.width - 2*parent.spacing
                         anchors.verticalCenter: parent.verticalCenter
-                        text: model.name
+
+                        Label {
+                            width: parent.width
+                            font.bold: true
+
+                            text: model.name
+                        }
+
+                        Label {
+                            width: parent.width
+                            font.italic: true
+                            font.pixelSize: Theme.fontSizeTiny
+
+                            text: {
+                                var out = model.latestVersion
+
+                                if (model.installed && model.installedVersion !== model.latestVersion) {
+                                    out += " (" + model.installedVersion + " " + qsTr("installed") + ")"
+                                }
+
+                                return out
+                            }
+                        }
+
                     }
 
                     Image {

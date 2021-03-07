@@ -106,6 +106,10 @@
         <source>Updating offline package</source>
         <translation>Updating offline package</translation>
     </message>
+    <message>
+        <source>installed</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PackageManager</name>

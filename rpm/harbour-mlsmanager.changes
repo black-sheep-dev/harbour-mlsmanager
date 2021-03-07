@@ -1,3 +1,7 @@
+* Wed Mar 07 2021 Black Sheep <blacksheep@nubecula.org> 0.1.11-1
+- Polish translation updated (thanks to atlochowski)
+- Show package version info in list
+
 * Wed Mar 03 2021 Black Sheep <blacksheep@nubecula.org> 0.1.10-1
 - Add translation information with self hosted weblate server
 

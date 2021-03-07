@@ -29,8 +29,8 @@ The repository is available at this address:
 
 
 ## Automatic Updates
-My plan is to update the packages every month. I have created an automatic package creation pipline to make the job a bit easier for me.
-Maybe I'll increase the frequency in the future.
+Updates with actual data will be released weekly (if possible). 
+I have created an automatic package creation pipline to make the job a bit easier for me.
 
 
 ## Available Countries
