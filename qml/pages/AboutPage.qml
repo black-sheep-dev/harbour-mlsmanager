@@ -99,12 +99,12 @@ Page {
                         wrapMode: Text.WrapAnywhere
                         font.pixelSize: Theme.fontSizeSmall
 
-                        text: "https://weblate.nubecula.org/projects/" + Qt.application.name
+                        text: "https://weblate.nubecula.org/engage/" + Qt.application.name
                         color: parent.parent.pressed ? Theme.highlightColor : Theme.primaryColor
 
                     }
                 }
-                onClicked: Qt.openUrlExternally("https://weblate.nubecula.org/projects/" + Qt.application.name)
+                onClicked: Qt.openUrlExternally("https://weblate.nubecula.org/engage/" + Qt.application.name)
             }
 
             Image {
