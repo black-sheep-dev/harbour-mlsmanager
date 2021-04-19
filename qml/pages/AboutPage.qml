@@ -99,12 +99,21 @@ Page {
                         wrapMode: Text.WrapAnywhere
                         font.pixelSize: Theme.fontSizeSmall
 
-                        text: "https://weblate.nubecula.org/projects/" + Qt.application.name
+                        text: "https://weblate.nubecula.org/engage/" + Qt.application.name
                         color: parent.parent.pressed ? Theme.highlightColor : Theme.primaryColor
 
                     }
                 }
-                onClicked: Qt.openUrlExternally("https://weblate.nubecula.org/projects/" + Qt.application.name)
+                onClicked: Qt.openUrlExternally("https://weblate.nubecula.org/engage/" + Qt.application.name)
+            }
+
+            Image {
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: parent.width
+                height: sourceSize.height * width / sourceSize.width
+                smooth: true
+                fillMode: Image.PreserveAspectFit
+                source: "http://weblate.nubecula.org/widgets/" + Qt.application.name + "/-/" + Qt.application.name + "/multi-auto.svg"
             }
 
             SectionHeader{
