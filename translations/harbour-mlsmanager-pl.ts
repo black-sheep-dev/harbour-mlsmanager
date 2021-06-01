@@ -45,7 +45,7 @@
     </message>
     <message>
         <source>Give star</source>
-        <translation type="unfinished"></translation>
+        <translation>Daj gwiazdkę</translation>
     </message>
 </context>
 <context>
