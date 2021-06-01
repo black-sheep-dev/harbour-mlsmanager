@@ -50,7 +50,7 @@ Packages with version >2021.02.10-1 the installation path is in "/home/.system/u
 - German
 - Norvegian (by comradekingu)
 - Polish (by atlochowski)
-- Slovak (by okruhliak)
+- Slovak (by okruhliak / Ladislav Hodas)
   
 Your language is not available? You are welcome to support this project by translating it on my self hosted Weblate server:
 
