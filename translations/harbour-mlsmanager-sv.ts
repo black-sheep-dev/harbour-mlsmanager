@@ -23,10 +23,6 @@
         <source>Donations</source>
         <translation>Donationer</translation>
     </message>
-    <message>
-        <source>If you like my work you can buy me a beer.</source>
-        <translation>Om du gillar mitt arbete, kanske du bjuder på en öl?</translation>
-    </message>
 </context>
 <context>
     <name>MainPage</name>
