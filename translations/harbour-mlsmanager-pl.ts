@@ -108,7 +108,7 @@
     </message>
     <message>
         <source>installed</source>
-        <translation type="unfinished"></translation>
+        <translation>zainstalowany</translation>
     </message>
 </context>
 <context>
