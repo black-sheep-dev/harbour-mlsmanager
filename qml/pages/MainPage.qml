@@ -22,7 +22,7 @@ Page {
             MenuItem {
                 visible: MlsManager.packagesModel().updatesAvailable
                 text: qsTr("Update all packages")
-                onClicked: remorsePopup.execute(qsTr("Updating all packages"), function() {MlsManager.updatePackages()} )
+                onClicked: Remorse.popupAction(page, qsTr("Updating all packages"), function() {MlsManager.updatePackages()} )
             }
             MenuItem {
                 text: listView.showSearch ? qsTr("Hide search") : qsTr("Search")
@@ -46,8 +46,6 @@ Page {
             anchors.centerIn: parent
             running: MlsManager.packagesModel().loading
         }
-
-        RemorsePopup { id: remorsePopup }
 
         Connections {
             target: MlsManager.packagesModel()
@@ -122,24 +120,22 @@ Page {
                         visible: !model.installed
                         text: qsTr("Install")
 
-                        onClicked: remorse.execute(delegate, qsTr("Installing offline package"), function() { MlsManager.installPackage(model.code) })
+                        onClicked: delegate.remorseAction(qsTr("Installing offline package"), function() { MlsManager.installPackage(model.code) })
                     }
                     MenuItem {
                         visible: model.installed
                         text: qsTr("Remove")
 
-                        onClicked: remorse.execute(delegate, qsTr("Removing offline package"), function() { MlsManager.removePackage(model.code) })
+                        onClicked: delegate.remorseAction(qsTr("Removing offline package"), function() { MlsManager.removePackage(model.code) })
                     }
 
                     MenuItem {
                         visible: model.updateAvailable
                         text: qsTr("Update")
 
-                        onClicked: remorse.execute(delegate, qsTr("Updating offline package"), function() { MlsManager.updatePackage(model.code) })
+                        onClicked: delegate.remorseAction(qsTr("Updating offline package"), function() { MlsManager.updatePackage(model.code) })
                     }
                 }
-
-                RemorseItem { id: remorse }
 
                 Rectangle {
                     id: progressBar
