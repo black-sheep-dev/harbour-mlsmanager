@@ -9,7 +9,7 @@ Name:       harbour-mlsmanager
 # << macros
 
 Summary:    MLS Manager
-Version:    0.1.13
+Version:    0.1.14
 Release:    1
 Group:      Location/Location Framework
 License:    MIT

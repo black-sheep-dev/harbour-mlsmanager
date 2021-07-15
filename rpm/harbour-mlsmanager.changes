@@ -1,3 +1,6 @@
+* Thu Jul 15 2021 Black Sheep <blacksheep@nubecula.org> 0.1.14-1
+- Improved scrolling behaviour (thankt to Petr Tsymbarovich for his contribution)
+
 * Tue Jun 01 2021 Black Sheep <blacksheep@nubecula.org> 0.1.13-1
 - Translation fixes Slovak (thanks to Ladislav Hodas)
 - Add button to star repo with SailHub in about page
@@ -6,7 +9,7 @@
 - Translation fixes
 - Build for aarch64
 
-* Wed Mar 07 2021 Black Sheep <blacksheep@nubecula.org> 0.1.11-1
+* Sun Mar 07 2021 Black Sheep <blacksheep@nubecula.org> 0.1.11-1
 - Polish translation updated (thanks to atlochowski)
 - Show package version info in list
 
