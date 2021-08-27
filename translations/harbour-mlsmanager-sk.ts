@@ -21,7 +21,7 @@
     </message>
     <message>
         <source>Donations</source>
-        <translation>Darovania</translation>
+        <translation>Dary</translation>
     </message>
     <message>
         <source>If you like my work why not buy me a beer?</source>
@@ -29,11 +29,11 @@
     </message>
     <message>
         <source>Donate with PayPal</source>
-        <translation>Sponzorovať cez PayPal</translation>
+        <translation>Darovať cez PayPal</translation>
     </message>
     <message>
         <source>Donate with Liberpay</source>
-        <translation>Sponzorovať cez Liberpay</translation>
+        <translation>Darovať cez Liberpay</translation>
     </message>
     <message>
         <source>Translations</source>
@@ -45,7 +45,7 @@
     </message>
     <message>
         <source>Give star</source>
-        <translation type="unfinished"></translation>
+        <translation>Udeliť hviezdičku</translation>
     </message>
 </context>
 <context>
