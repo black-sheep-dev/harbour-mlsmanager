@@ -9,7 +9,7 @@ Name:       harbour-mlsmanager
 # << macros
 
 Summary:    MLS Manager
-Version:    0.1.14
+Version:    0.1.15
 Release:    1
 Group:      Location/Location Framework
 License:    MIT
@@ -55,6 +55,13 @@ rm -rf %{buildroot}
 
 # >> install post
 # << install post
+
+%postun
+ssu removerepo nubecula-mls-offline-repo
+
+
+# >> uninstall post
+# << uninstall post
 
 desktop-file-install --delete-original       \
   --dir %{buildroot}%{_datadir}/applications             \

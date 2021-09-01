@@ -10,7 +10,7 @@
 #   - translation filenames have to be changed
 
 # VERSION
-VERSION = 0.1.14
+VERSION = 0.1.15
 DEFINES += APP_VERSION=\\\"$$VERSION\\\"
 
 # The name of your application
@@ -63,8 +63,6 @@ TRANSLATIONS += translations/harbour-mlsmanager-de.ts \
     translations/harbour-mlsmanager-nb_NO.ts \
     translations/harbour-mlsmanager-pl.ts \
     translations/harbour-mlsmanager-sk.ts \
-
-
 
 HEADERS += \
     src/constants.h \
