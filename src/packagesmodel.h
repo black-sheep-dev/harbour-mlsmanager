@@ -22,6 +22,7 @@ public:
         InstalledVersionRole,
         LatestVersionRole,
         ProgressRole,
+        TypeRole,
         UpdateAvailableRole
     };
     Q_ENUM(PackageRoles)

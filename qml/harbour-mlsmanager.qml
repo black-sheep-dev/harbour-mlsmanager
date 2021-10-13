@@ -32,10 +32,6 @@ ApplicationWindow
             __silica_applicationwindow_instance.activate()
         }
 
-        function onError() {
-            errorNotification.close()
-            __silica_applicationwindow_instance.activate()
-        }
     }
 
     Notification {
@@ -56,32 +52,24 @@ ApplicationWindow
     }
 
     Notification {
-        id: errorNotification
-        category: "x-mlsmanager.errors"
-        appIcon: "image://theme/icon-lock-warning"
-        previewSummary: qsTr("Error")
-        summary: qsTr("Operation failed")
-        remoteActions: [ {
-                name: "default",
-                service: "harbour.mlsmanager.service",
-                path: "/harbour/mlsmanager/service",
-                iface: "harbour.mlsmanager.service",
-                method: "onError",
-                arguments: [ ]
-            } ]
-    }
+        function show(message, icn) {
+            replacesId = 0
+            previewSummary = ""
+            previewBody = message
+            icon = icn || "image://theme/harbour-mlsmanager"
+            publish()
+        }
 
+        id: notification
+        appName: "MLS Manager"
+        expireTimeout: 3000
+    }
 
     Connections {
         target: MlsManager
 
-        onOperationError: {
-            errorNotification.body = msg
-
-
-            errorNotification.publish()
-        }
-        onOperationSucces: {}
+        onOperationError: notification.show(msg)
+        onOperationSuccess: notification.show(msg)
         onUpdatesAvailable: {
             if (updateNotificationId > 0) {
                 updatesNotification.replacesId = updateNotificationId

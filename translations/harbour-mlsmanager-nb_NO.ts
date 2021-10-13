@@ -67,10 +67,6 @@
         <translation>Søk</translation>
     </message>
     <message>
-        <source>Offline Packages</source>
-        <translation>Frakoblede pakker</translation>
-    </message>
-    <message>
         <source>Install</source>
         <translation>Installer</translation>
     </message>
@@ -114,6 +110,10 @@
         <source>installed</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Countries</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PackageManager</name>
@@ -147,6 +147,61 @@
     </message>
 </context>
 <context>
+    <name>RegionsPage</name>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished">Gjenoppfrisk</translation>
+    </message>
+    <message>
+        <source>Update all packages</source>
+        <translation type="unfinished">Oppgrader alle pakker</translation>
+    </message>
+    <message>
+        <source>Updating all packages</source>
+        <translation type="unfinished">Oppgraderer alle pakker</translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No offline packages available</source>
+        <translation type="unfinished">Ingen frakoblede pakker tilgjengelig</translation>
+    </message>
+    <message>
+        <source>Check your internet connection</source>
+        <translation type="unfinished">Sjekk din internett-tilknytning</translation>
+    </message>
+    <message>
+        <source>Install</source>
+        <translation type="unfinished">Installer</translation>
+    </message>
+    <message>
+        <source>Installing offline package</source>
+        <translation type="unfinished">Installerer frakoblet pakke</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation type="unfinished">Fjern</translation>
+    </message>
+    <message>
+        <source>Removing offline package</source>
+        <translation type="unfinished">Fjerner frakoblet pakke</translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation type="unfinished">Oppgrader</translation>
+    </message>
+    <message>
+        <source>Updating offline package</source>
+        <translation type="unfinished">Oppgraderer frakoblet pakke</translation>
+    </message>
+    <message>
+        <source>installed</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>harbour-mlsmanager</name>
     <message>
         <source>Updates available</source>
@@ -159,14 +214,6 @@
     <message>
         <source>Updates of MLS offline packages are available.</source>
         <translation>Du kan installere nye versjoner av frakoblede MLS-pakker.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Operation failed</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

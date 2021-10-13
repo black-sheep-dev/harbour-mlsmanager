@@ -67,10 +67,6 @@
         <translation>Hľadať</translation>
     </message>
     <message>
-        <source>Offline Packages</source>
-        <translation>Uložené balíky</translation>
-    </message>
-    <message>
         <source>Install</source>
         <translation>Inštalovať</translation>
     </message>
@@ -114,6 +110,10 @@
         <source>installed</source>
         <translation>inštalované</translation>
     </message>
+    <message>
+        <source>Countries</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PackageManager</name>
@@ -147,6 +147,61 @@
     </message>
 </context>
 <context>
+    <name>RegionsPage</name>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished">Obnoviť</translation>
+    </message>
+    <message>
+        <source>Update all packages</source>
+        <translation type="unfinished">Aktualizovať všetky balíky</translation>
+    </message>
+    <message>
+        <source>Updating all packages</source>
+        <translation type="unfinished">Aktualizácia všetkých balíkov</translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No offline packages available</source>
+        <translation type="unfinished">Žiadne uložené balíky</translation>
+    </message>
+    <message>
+        <source>Check your internet connection</source>
+        <translation type="unfinished">Skontrolujte internetové pripojenie</translation>
+    </message>
+    <message>
+        <source>Install</source>
+        <translation type="unfinished">Inštalovať</translation>
+    </message>
+    <message>
+        <source>Installing offline package</source>
+        <translation type="unfinished">Inštalovanie uložených balíkov</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation type="unfinished">Odstrániť</translation>
+    </message>
+    <message>
+        <source>Removing offline package</source>
+        <translation type="unfinished">Odstraňovanie uložených balíkov</translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation type="unfinished">Aktualizovať</translation>
+    </message>
+    <message>
+        <source>Updating offline package</source>
+        <translation type="unfinished">Aktualizácia uložených balíkov</translation>
+    </message>
+    <message>
+        <source>installed</source>
+        <translation type="unfinished">inštalované</translation>
+    </message>
+</context>
+<context>
     <name>harbour-mlsmanager</name>
     <message>
         <source>Updates available</source>
@@ -159,14 +214,6 @@
     <message>
         <source>Updates of MLS offline packages are available.</source>
         <translation>Je dostupná aktualizácia uložených MLS balíkov.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Chyba</translation>
-    </message>
-    <message>
-        <source>Operation failed</source>
-        <translation>Operácia zlyhala</translation>
     </message>
 </context>
 </TS>

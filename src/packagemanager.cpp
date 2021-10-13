@@ -11,6 +11,7 @@
 #include <QVersionNumber>
 
 #include "constants.h"
+#include "enums.h"
 #include "ssuinterface.h"
 
 PackageManager::PackageManager(QObject *parent) :
@@ -119,7 +120,6 @@ void PackageManager::onErrorCode(quint32 code, const QString &details)
     qDebug() << details;
 #else
     Q_UNUSED(code)
-    Q_UNUSED(details)
 #endif
 
     auto t = qobject_cast<PackageTransaction *>(sender());
@@ -150,7 +150,7 @@ void PackageManager::onErrorCode(quint32 code, const QString &details)
         break;
     }
 
-    emit operationError(msg);
+    emit operationError(msg + ": " + details);
 }
 
 void PackageManager::onFinished(quint32 exit, quint32 runtime)
@@ -373,14 +373,23 @@ void PackageManager::parsePackages()
             continue;
 
         const QString name = parts.at(0);
-        const QString code = name.section("-", 3, 3);
+        QString code;
         const QString version = parts.at(1);
+        quint8 type{PackageType::Undefined};
 
-        if (code.isEmpty() || code == QLatin1String("eu"))
-            continue;
+
+
+        if (name.contains(QLatin1String("region"))) {
+            code = name.section("-", 3, 4);
+            type = PackageType::Region;
+        } else {
+            code = name.section("-", 3, 3);
+            type = PackageType::Country;
+        }
 
         Package pkg = packages.value(code, Package());
         pkg.code = code;
+        pkg.type = type;
 
         if (parts.last() == QLatin1String("installed")) {
                 pkg.installed = true;
@@ -396,7 +405,7 @@ void PackageManager::parsePackages()
         const int pos = p.summary.indexOf("(") + 1;
         pkg.name = p.summary.mid(pos, p.summary.length() - pos - 1).replace("_", " ");
 
-        packages.insert(code, pkg);
+        packages.insert(pkg.code, pkg);
     }
 
     emit packagesAvailable(packages.values());

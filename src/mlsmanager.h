@@ -33,14 +33,14 @@ signals:
     void updatesAvailable();
 
 public slots:
-    Q_INVOKABLE void installPackage(const QString &code);
-    Q_INVOKABLE void removePackage(const QString &code);
-    Q_INVOKABLE void updatePackage(const QString &code);
-    Q_INVOKABLE void updatePackages();
+    void installPackage(const QString &code);
+    void removePackage(const QString &code);
+    void updatePackage(const QString &code);
+    void updatePackages();
 
-    Q_INVOKABLE void getUpdates();
-    Q_INVOKABLE void refreshCache();
-    Q_INVOKABLE void refreshRepo();
+    void getUpdates();
+    void refreshCache();
+    void refreshRepo();
 
     Q_INVOKABLE void testSlot();
 

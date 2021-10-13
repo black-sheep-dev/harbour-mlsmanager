@@ -67,10 +67,6 @@
         <translation>Wyszukaj</translation>
     </message>
     <message>
-        <source>Offline Packages</source>
-        <translation>Pakiety offline</translation>
-    </message>
-    <message>
         <source>Install</source>
         <translation>Instaluj</translation>
     </message>
@@ -114,6 +110,10 @@
         <source>installed</source>
         <translation>zainstalowany</translation>
     </message>
+    <message>
+        <source>Countries</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PackageManager</name>
@@ -147,6 +147,61 @@
     </message>
 </context>
 <context>
+    <name>RegionsPage</name>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished">Odśwież</translation>
+    </message>
+    <message>
+        <source>Update all packages</source>
+        <translation type="unfinished">Aktualizuj wszystkie pakiety</translation>
+    </message>
+    <message>
+        <source>Updating all packages</source>
+        <translation type="unfinished">Aktualizowanie wszystkich pakietów</translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No offline packages available</source>
+        <translation type="unfinished">Brak dostępnych pakietów offline</translation>
+    </message>
+    <message>
+        <source>Check your internet connection</source>
+        <translation type="unfinished">Sprawdź swoje połączenie z internetem</translation>
+    </message>
+    <message>
+        <source>Install</source>
+        <translation type="unfinished">Instaluj</translation>
+    </message>
+    <message>
+        <source>Installing offline package</source>
+        <translation type="unfinished">Instalowanie pakietów offline</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation type="unfinished">Usuń</translation>
+    </message>
+    <message>
+        <source>Removing offline package</source>
+        <translation type="unfinished">Usuwanie pakietów offline</translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation type="unfinished">Aktualizuj</translation>
+    </message>
+    <message>
+        <source>Updating offline package</source>
+        <translation type="unfinished">Aktualizowanie pakietów offline</translation>
+    </message>
+    <message>
+        <source>installed</source>
+        <translation type="unfinished">zainstalowany</translation>
+    </message>
+</context>
+<context>
     <name>harbour-mlsmanager</name>
     <message>
         <source>Updates available</source>
@@ -159,14 +214,6 @@
     <message>
         <source>Updates of MLS offline packages are available.</source>
         <translation>Aktualizacje pakietów MLS offline są dostępne.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Błąd</translation>
-    </message>
-    <message>
-        <source>Operation failed</source>
-        <translation>Operacja nie powiodła się</translation>
     </message>
 </context>
 </TS>

@@ -184,6 +184,9 @@ QVariant PackagesModel::data(const QModelIndex &index, int role) const
     case ProgressRole:
         return package.progress;
 
+    case TypeRole:
+        return package.type;
+
     case UpdateAvailableRole:
         return package.updateAvailable;
 
@@ -203,6 +206,7 @@ QHash<int, QByteArray> PackagesModel::roleNames() const
     roles[InstalledVersionRole]     = "installedVersion";
     roles[LatestVersionRole]        = "latestVersion";
     roles[ProgressRole]             = "progress";
+    roles[TypeRole]                 = "type";
     roles[UpdateAvailableRole]      = "updateAvailable";
 
     return roles;

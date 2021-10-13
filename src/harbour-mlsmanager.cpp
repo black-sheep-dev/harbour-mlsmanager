@@ -4,6 +4,7 @@
 
 #include <sailfishapp.h>
 
+#include "enums.h"
 #include "mlsmanager.h"
 
 
@@ -81,6 +82,8 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationVersion(APP_VERSION);
     QCoreApplication::setOrganizationName(QStringLiteral("nubecula.org"));
     QCoreApplication::setOrganizationDomain(QStringLiteral("nubecula.org"));
+
+    qmlRegisterUncreatableType<PackageType>(uri, 1, 0, "PackageType", "enumeration");
 
     qmlRegisterType<PackagesModel>(uri, 1, 0, "PackagesModel");
     qmlRegisterType<PackagesSortFilterModel>(uri, 1, 0, "PackagesSortFilterModel");

@@ -42,6 +42,7 @@ DISTFILES += qml/harbour-mlsmanager.qml \
     data/harbour-mlsmanager.privileges \
     data/harbour.mlsmanager.service \
     qml/cover/CoverPage.qml \
+    qml/pages/RegionsPage.qml \
     rpm/harbour-mlsmanager.changes \
     rpm/harbour-mlsmanager.changes.run.in \
     rpm/harbour-mlsmanager.spec \
@@ -66,6 +67,7 @@ TRANSLATIONS += translations/harbour-mlsmanager-de.ts \
 
 HEADERS += \
     src/constants.h \
+    src/enums.h \
     src/mlsmanager.h \
     src/package.h \
     src/packagedaemon.h \
@@ -78,13 +80,16 @@ HEADERS += \
 flags.files = icons/flags/*
 flags.path = $$INSTALL_ROOT/usr/share/harbour-mlsmanager/flags/
 
+images.files = images/*
+images.path = $$INSTALL_ROOT/usr/share/harbour-mlsmanager/images/
+
 privileges.files = data/harbour-mlsmanager.privileges
 privileges.path = $$INSTALL_ROOT/usr/share/mapplauncherd/privileges.d/
 
 dbus.files = data/harbour.mlsmanager.service
 dbus.path = $$INSTALL_ROOT/usr/share/dbus-1/services
 
-INSTALLS += flags privileges dbus
+INSTALLS += flags images privileges dbus
 
 RESOURCES += \
     ressources.qrc

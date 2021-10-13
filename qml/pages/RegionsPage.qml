@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import QtGraphicalEffects 1.0
 
 import org.nubecula.harbour.mlsmanager 1.0
 
@@ -12,10 +13,6 @@ Page {
         PullDownMenu {
             busy: MlsManager.packagesModel().busy
             MenuItem {
-                text: qsTr("About")
-                onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
-            }
-            MenuItem {
                 text: qsTr("Refresh")
                 onClicked: MlsManager.refreshRepo()
             }
@@ -24,21 +21,6 @@ Page {
                 text: qsTr("Update all packages")
                 onClicked: Remorse.popupAction(page, qsTr("Updating all packages"), function() {MlsManager.updatePackages()} )
             }
-            MenuItem {
-                text: listView.showSearch ? qsTr("Hide search") : qsTr("Search")
-                onClicked: {
-                    listView.showSearch = !listView.showSearch
-
-                    if (!listView.showSearch) {
-                        searchField.focus = false
-                        searchField.text = ""
-                    }
-                }
-            } 
-//            MenuItem {
-//                text: "Test"
-//                onClicked: MlsManager.testSlot()
-//            }
         }
 
         PageBusyIndicator {
@@ -54,68 +36,31 @@ Page {
 
         anchors.fill: parent
 
-        Column {
-            id: header
-            width: parent.width
-
-            PageHeader {
-                title: qsTr("Countries")
-                titleColor: Theme.highlightColor
-            }
-
-            SearchField {
-                id: searchField
-                width: parent.width
-                height: listView.showSearch ? implicitHeight : 0
-                opacity: listView.showSearch ? 1 : 0
-                onTextChanged: packagesSortFilterModel.setNameFilter(text)
-
-
-                EnterKey.onClicked: searchField.focus = false
-
-                Connections {
-                    target: listView
-                    onShowSearchChanged: {
-                        searchField.forceActiveFocus()
-                    }
-                }
-
-                Behavior on height {
-                    NumberAnimation { duration: 300 }
-                }
-                Behavior on opacity {
-                    NumberAnimation { duration: 300 }
-                }
-            }
-        }
-
         SilicaListView {
-            property bool showSearch: false
-
             id: listView
-
-            opacity: MlsManager.packagesModel().loading ? 0.0 : 1.0
 
             Behavior on opacity {
                 FadeAnimation {}
             }
 
-            width: parent.width
-            anchors.top: header.bottom
-            anchors.bottom: parent.bottom
+            anchors.fill: parent
 
-            clip: true
+            header: PageHeader {
+                title: qsTr("Regions")
+            }
+
+            opacity: MlsManager.packagesModel().loading ? 0.0 : 1.0
 
             model: PackagesSortFilterModel {
                 id: packagesSortFilterModel
                 sourceModel: MlsManager.packagesModel()
-                typeFilter: PackageType.Country
+                typeFilter: PackageType.Region
             }
 
             delegate: ListItem {
                 id: delegate
 
-                contentHeight: contentRow.height
+                contentHeight: contentRow.height + worldmap.height
 
                 menu: ContextMenu {
                     MenuItem {
@@ -161,20 +106,8 @@ Page {
                     width: parent.width - 2*x
                     spacing: Theme.paddingMedium
 
-                    Image {
-                        id: flagIcon
-                        height: Theme.itemSizeMedium
-                        width: 100
-                        anchors.verticalCenter: parent.verticalCenter
-
-                        fillMode: Image.PreserveAspectFit
-                        smooth: true
-
-                        source: "/usr/share/" + Qt.application.name + "/flags/" + model.code + ".png"
-                    }
-
                     Column {
-                        width: parent.width - flagIcon.width - selectedIcon.width - 2*parent.spacing
+                        width: parent.width - selectedIcon.width - parent.spacing
                         anchors.verticalCenter: parent.verticalCenter
 
                         Label {
@@ -210,6 +143,39 @@ Page {
                         source: (model.updateAvailable ? "image://theme/icon-m-capslock?" : "image://theme/icon-m-acknowledge?")
                     }
                 }
+
+                Image {
+                    id: worldmap
+                    anchors.top: contentRow.bottom
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: parent.width - 2 * Theme.paddingLarge
+                    sourceSize.width: parent.width
+                    fillMode: Image.PreserveAspectFit
+                    opacity: Theme.opacityFaint
+                    source: "/usr/share/harbour-mlsmanager/images/region-earth.svg"
+
+                    ColorOverlay{
+                        anchors.fill: parent
+                        source: parent
+                        color: Theme.lightPrimaryColor
+                        antialiasing: true
+                    }
+                }
+
+                Image {
+                    id: regionImage
+                    anchors.fill: worldmap
+                    sourceSize.width: parent.width
+                    fillMode: Image.PreserveAspectFit
+                    source: "/usr/share/harbour-mlsmanager/images/" + model.code + ".svg"
+
+                    ColorOverlay{
+                        anchors.fill: parent
+                        source: parent
+                        color: Theme.secondaryHighlightColor
+                        antialiasing: true
+                    }
+                }
             }
 
             ViewPlaceholder {
@@ -221,6 +187,4 @@ Page {
             VerticalScrollDecorator {}
         }
     }
-
-    onStatusChanged: if (status === PageStatus.Active) pageStack.pushAttached(Qt.resolvedUrl("RegionsPage.qml"))
 }

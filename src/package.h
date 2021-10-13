@@ -25,6 +25,7 @@ struct Package
     QString latestVersion;
     QString name;
     quint8 progress{0};
+    quint8 type{0};
     bool updateAvailable{false};
 
     enum Action {
