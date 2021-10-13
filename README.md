@@ -19,9 +19,6 @@ And here we are…
 
 All of this is only intended as a temporary solution until Jolla presents an alternative.
 
-## Development Status
-The main functionallity is given (I hope) but code is a bit hacky at the moment and needs improvement.
-
 ## Repository
 The repository is available at this address: \
 [https://mls-offline-repo.nubecula.org/](https://mls-offline-repo.nubecula.org/)
@@ -33,8 +30,17 @@ I have created an automatic package creation pipline to make the job a bit easie
 
 
 ## Available Countries
-At the moment 185 different countries are available. \
-If you need more, let me know in comment section.
+At the moment 185 different countries are available.
+
+## Available Regions
+- Africa
+- Asia
+- Australia and Oceania
+- Europe
+- North America
+- South America
+
+If you need more, let me know.
 
 ## How to use
 
