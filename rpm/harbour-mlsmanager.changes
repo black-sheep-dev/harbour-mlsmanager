@@ -1,3 +1,7 @@
+* Wed Oct 13 2021 Black Sheep <blacksheep@nubecula.org> 0.2.0-1
+- Add regions (Africa / Asia / Australia & Oceania / Europe / North America / South America)
+- Improvements & Bufixes
+
 * Wed Sep 01 2021 Black Sheep <blacksheep@nubecula.org> 0.1.15-1
 - Translation update (Polish / Slovak)
 - Remove repository on deinstall (4.2.0 seems to have a problem with it at the moment)
