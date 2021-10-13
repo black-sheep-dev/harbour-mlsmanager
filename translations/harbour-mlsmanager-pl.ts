@@ -150,15 +150,15 @@
     <name>RegionsPage</name>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished">Odśwież</translation>
+        <translation>Odśwież</translation>
     </message>
     <message>
         <source>Update all packages</source>
-        <translation type="unfinished">Aktualizuj wszystkie pakiety</translation>
+        <translation>Aktualizuj wszystkie pakiety</translation>
     </message>
     <message>
         <source>Updating all packages</source>
-        <translation type="unfinished">Aktualizowanie wszystkich pakietów</translation>
+        <translation>Aktualizowanie wszystkich pakietów</translation>
     </message>
     <message>
         <source>Regions</source>
@@ -166,39 +166,39 @@
     </message>
     <message>
         <source>No offline packages available</source>
-        <translation type="unfinished">Brak dostępnych pakietów offline</translation>
+        <translation>Brak dostępnych pakietów offline</translation>
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation type="unfinished">Sprawdź swoje połączenie z internetem</translation>
+        <translation>Sprawdź swoje połączenie z internetem</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished">Instaluj</translation>
+        <translation>Instaluj</translation>
     </message>
     <message>
         <source>Installing offline package</source>
-        <translation type="unfinished">Instalowanie pakietów offline</translation>
+        <translation>Instalowanie pakietów offline</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished">Usuń</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <source>Removing offline package</source>
-        <translation type="unfinished">Usuwanie pakietów offline</translation>
+        <translation>Usuwanie pakietów offline</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished">Aktualizuj</translation>
+        <translation>Aktualizuj</translation>
     </message>
     <message>
         <source>Updating offline package</source>
-        <translation type="unfinished">Aktualizowanie pakietów offline</translation>
+        <translation>Aktualizowanie pakietów offline</translation>
     </message>
     <message>
         <source>installed</source>
-        <translation type="unfinished">zainstalowany</translation>
+        <translation>zainstalowany</translation>
     </message>
 </context>
 <context>
