@@ -150,15 +150,15 @@
     <name>RegionsPage</name>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished">Gjenoppfrisk</translation>
+        <translation>Gjenoppfrisk</translation>
     </message>
     <message>
         <source>Update all packages</source>
-        <translation type="unfinished">Oppgrader alle pakker</translation>
+        <translation>Oppgrader alle pakker</translation>
     </message>
     <message>
         <source>Updating all packages</source>
-        <translation type="unfinished">Oppgraderer alle pakker</translation>
+        <translation>Oppgraderer alle pakker</translation>
     </message>
     <message>
         <source>Regions</source>
@@ -166,35 +166,35 @@
     </message>
     <message>
         <source>No offline packages available</source>
-        <translation type="unfinished">Ingen frakoblede pakker tilgjengelig</translation>
+        <translation>Ingen frakoblede pakker tilgjengelig</translation>
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation type="unfinished">Sjekk din internett-tilknytning</translation>
+        <translation>Sjekk din internett-tilknytning</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished">Installer</translation>
+        <translation>Installer</translation>
     </message>
     <message>
         <source>Installing offline package</source>
-        <translation type="unfinished">Installerer frakoblet pakke</translation>
+        <translation>Installerer frakoblet pakke</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished">Fjern</translation>
+        <translation>Fjern</translation>
     </message>
     <message>
         <source>Removing offline package</source>
-        <translation type="unfinished">Fjerner frakoblet pakke</translation>
+        <translation>Fjerner frakoblet pakke</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished">Oppgrader</translation>
+        <translation>Oppgrader</translation>
     </message>
     <message>
         <source>Updating offline package</source>
-        <translation type="unfinished">Oppgraderer frakoblet pakke</translation>
+        <translation>Oppgraderer frakoblet pakke</translation>
     </message>
     <message>
         <source>installed</source>
