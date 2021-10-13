@@ -150,15 +150,15 @@
     <name>RegionsPage</name>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished">Obnoviť</translation>
+        <translation>Obnoviť</translation>
     </message>
     <message>
         <source>Update all packages</source>
-        <translation type="unfinished">Aktualizovať všetky balíky</translation>
+        <translation>Aktualizovať všetky balíky</translation>
     </message>
     <message>
         <source>Updating all packages</source>
-        <translation type="unfinished">Aktualizácia všetkých balíkov</translation>
+        <translation>Aktualizácia všetkých balíkov</translation>
     </message>
     <message>
         <source>Regions</source>
@@ -166,39 +166,39 @@
     </message>
     <message>
         <source>No offline packages available</source>
-        <translation type="unfinished">Žiadne uložené balíky</translation>
+        <translation>Žiadne uložené balíky</translation>
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation type="unfinished">Skontrolujte internetové pripojenie</translation>
+        <translation>Skontrolujte internetové pripojenie</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished">Inštalovať</translation>
+        <translation>Inštalovať</translation>
     </message>
     <message>
         <source>Installing offline package</source>
-        <translation type="unfinished">Inštalovanie uložených balíkov</translation>
+        <translation>Inštalovanie uložených balíkov</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished">Odstrániť</translation>
+        <translation>Odstrániť</translation>
     </message>
     <message>
         <source>Removing offline package</source>
-        <translation type="unfinished">Odstraňovanie uložených balíkov</translation>
+        <translation>Odstraňovanie uložených balíkov</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished">Aktualizovať</translation>
+        <translation>Aktualizovať</translation>
     </message>
     <message>
         <source>Updating offline package</source>
-        <translation type="unfinished">Aktualizácia uložených balíkov</translation>
+        <translation>Aktualizácia uložených balíkov</translation>
     </message>
     <message>
         <source>installed</source>
-        <translation type="unfinished">inštalované</translation>
+        <translation>inštalované</translation>
     </message>
 </context>
 <context>
