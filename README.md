@@ -42,10 +42,22 @@ At the moment 185 different countries are available.
 
 If you need more, let me know.
 
+## Get no fix at your current location?
+These packages do not necessarily guarantee that you will get a GPS lock in your current area. This largely depends on whether there is any cell information available for this area.
+
+To remedy this, you can contribute to the [Mozilla Location Service](https://location.services.mozilla.com/) or [OpenCellid](https://opencellid.org) with software such as the Android App [Tower Collector](https://f-droid.org/en/packages/info.zamojski.soft.towercollector/) by logging the cell tower information in your area. 
+
 ## How to use
 
-In order to make use of the offline data, the option "High-accuracy positioning" or at least \
-"Battery saving mode" must be active in the location settings of Sailfish OS.
+In Settings there these recommended settings:
+
+Settings > System > Location > Custom settings: ON
+
+Settings > System > Location > Select custom settings: 
+
+- GPS positioning: ON
+- Offline position lock: ON
+- Online position lock: OFF
 
 ## Storage Location
 
