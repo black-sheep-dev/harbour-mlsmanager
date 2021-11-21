@@ -112,7 +112,7 @@
     </message>
     <message>
         <source>Countries</source>
-        <translation type="unfinished"></translation>
+        <translation>Kraje</translation>
     </message>
 </context>
 <context>
@@ -162,7 +162,7 @@
     </message>
     <message>
         <source>Regions</source>
-        <translation type="unfinished"></translation>
+        <translation>Regiony</translation>
     </message>
     <message>
         <source>No offline packages available</source>
