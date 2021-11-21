@@ -19,11 +19,6 @@ And here we are…
 
 All of this is only intended as a temporary solution until Jolla presents an alternative.
 
-## Repository
-The repository is available at this address: \
-[https://mls-offline-repo.nubecula.org/](https://mls-offline-repo.nubecula.org/)
-
-
 ## Automatic Updates
 Updates with actual data will be released weekly (if possible). \
 I have created an automatic package creation pipline to make the job a bit easier for me.
@@ -84,5 +79,6 @@ His code helped me to get an idea how to handle repositories.
 
 If you like my work, you can buy me a beer! 
 
-[PayPal](https://www.paypal.com/paypalme/nubecula/1) \
-[Liberapay](https://liberapay.com/black-sheep-dev/donate)
+[![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif) ](https://www.paypal.com/paypalme/nubecula/1)
+
+[![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/black-sheep-dev/donate)
