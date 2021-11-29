@@ -5,215 +5,215 @@
     <name>AboutPage</name>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>О программе</translation>
     </message>
     <message>
         <source>MLS Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>MLS Manager</translation>
     </message>
     <message>
         <source>Manager for Mozilla Location Service offline packages for Sailfish OS.</source>
-        <translation type="unfinished"></translation>
+        <translation>Управление пакетами данных службы Mozilla Location Service в ОС Sailfish.</translation>
     </message>
     <message>
         <source>Sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Исходный код</translation>
     </message>
     <message>
         <source>Donations</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожертвовать</translation>
     </message>
     <message>
         <source>If you like my work why not buy me a beer?</source>
-        <translation type="unfinished"></translation>
+        <translation>Почему бы не угостить меня пивком, если вам нравится моя работа?</translation>
     </message>
     <message>
         <source>Donate with PayPal</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожертвовать через PayPal</translation>
     </message>
     <message>
         <source>Donate with Liberpay</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожертвовать через Liberpay</translation>
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Переводы</translation>
     </message>
     <message>
         <source>Your language is not available? You are welcome to support this project by translating it on my self hosted Weblate server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нет перевода на ваш язык? Вы можете помочь проекту переведя интерфейс программы на моем сервере Weblate.</translation>
     </message>
     <message>
         <source>Give star</source>
-        <translation type="unfinished"></translation>
+        <translation>Отметить звёздочкой</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>О программе</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Hide search</source>
-        <translation type="unfinished"></translation>
+        <translation>Скрыть поле поиска</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Установить</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <source>No offline packages available</source>
-        <translation type="unfinished"></translation>
+        <translation>Нет скачиваемых пакетов</translation>
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Проверьте соединение с Интернет</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Update all packages</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновить все пакеты</translation>
     </message>
     <message>
         <source>Updating all packages</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновление всех пакетов</translation>
     </message>
     <message>
         <source>Installing offline package</source>
-        <translation type="unfinished"></translation>
+        <translation>Установка пакета</translation>
     </message>
     <message>
         <source>Removing offline package</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление пакета</translation>
     </message>
     <message>
         <source>Updating offline package</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновление пакета</translation>
     </message>
     <message>
         <source>installed</source>
-        <translation type="unfinished"></translation>
+        <translation>установлено</translation>
     </message>
     <message>
         <source>Countries</source>
-        <translation type="unfinished"></translation>
+        <translation>Страны</translation>
     </message>
 </context>
 <context>
     <name>PackageManager</name>
     <message>
         <source>Failed to refresh repository</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось обновить репозиторий</translation>
     </message>
     <message>
         <source>Failed to remove package</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось удалить пакет</translation>
     </message>
     <message>
         <source>Failed to install package</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось установить пакет</translation>
     </message>
     <message>
         <source>Failed to update package(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось обновить пакет(ы)</translation>
     </message>
     <message>
         <source>Package installed</source>
-        <translation type="unfinished"></translation>
+        <translation>Пакет установлен</translation>
     </message>
     <message>
         <source>Package removed</source>
-        <translation type="unfinished"></translation>
+        <translation>Пакет удалён</translation>
     </message>
     <message>
         <source>Package(s) updated</source>
-        <translation type="unfinished"></translation>
+        <translation>Пакет(ы) обновлен(ы)</translation>
     </message>
 </context>
 <context>
     <name>RegionsPage</name>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Update all packages</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновить все пакеты</translation>
     </message>
     <message>
         <source>Updating all packages</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновление всех пакетов</translation>
     </message>
     <message>
         <source>Regions</source>
-        <translation type="unfinished"></translation>
+        <translation>Регионы</translation>
     </message>
     <message>
         <source>No offline packages available</source>
-        <translation type="unfinished"></translation>
+        <translation>Нет доступных пакетов данных</translation>
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Проверьте соединение с Интернет</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Установить</translation>
     </message>
     <message>
         <source>Installing offline package</source>
-        <translation type="unfinished"></translation>
+        <translation>Установка пакета</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <source>Removing offline package</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление пакета</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Updating offline package</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновление пакета</translation>
     </message>
     <message>
         <source>installed</source>
-        <translation type="unfinished"></translation>
+        <translation>установлено</translation>
     </message>
 </context>
 <context>
     <name>harbour-mlsmanager</name>
     <message>
         <source>Updates available</source>
-        <translation type="unfinished"></translation>
+        <translation>Доступны обновления</translation>
     </message>
     <message>
         <source>Click to show updates</source>
-        <translation type="unfinished"></translation>
+        <translation>Нажмите, чтобы посмотреть список обновления</translation>
     </message>
     <message>
         <source>Updates of MLS offline packages are available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Доступны новые версии пакетов данных MLS.</translation>
     </message>
 </context>
 </TS>
