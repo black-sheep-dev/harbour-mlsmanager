@@ -170,7 +170,7 @@ Page {
                         fillMode: Image.PreserveAspectFit
                         smooth: true
 
-                        source: "/usr/share/" + Qt.application.name + "/flags/" + model.code + ".png"
+                        source: "/usr/share/harbour-mlsmanager/flags/" + model.code + ".png"
                     }
 
                     Column {

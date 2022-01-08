@@ -79,9 +79,13 @@ int main(int argc, char *argv[])
     qInstallMessageHandler(redirectDebugMessages);
 #endif
 
-    QCoreApplication::setApplicationVersion(APP_VERSION);
-    QCoreApplication::setOrganizationName(QStringLiteral("nubecula.org"));
-    QCoreApplication::setOrganizationDomain(QStringLiteral("nubecula.org"));
+    QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
+    app->setApplicationVersion(APP_VERSION);
+    app->setApplicationName("mlsmanager");
+    app->setOrganizationDomain("org.nubecula");
+    app->setOrganizationName("org.nubecula");
+
+    QScopedPointer<QQuickView> v(SailfishApp::createView());
 
     qmlRegisterUncreatableType<PackageType>(uri, 1, 0, "PackageType", "enumeration");
 
@@ -97,10 +101,14 @@ int main(int argc, char *argv[])
         Q_UNUSED(engine)
         Q_UNUSED(scriptEngine)
 
-        auto *manager = new MlsManager();
+        auto manager = new MlsManager();
 
         return manager;
     });
 
-    return SailfishApp::main(argc, argv);
+
+    v->setSource(SailfishApp::pathTo("qml/harbour-mlsmanager.qml"));
+    v->show();
+
+    return app->exec();
 }

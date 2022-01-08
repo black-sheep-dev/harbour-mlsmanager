@@ -4,3 +4,6 @@ X-Nemo-Application-Type=silica-qt5
 Icon=harbour-mlsmanager
 Exec=harbour-mlsmanager
 Name=MLS Manager
+
+[X-Sailjail]
+Sandboxing=Disabled

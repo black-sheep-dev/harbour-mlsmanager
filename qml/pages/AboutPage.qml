@@ -1,20 +1,11 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
-import Nemo.DBus 2.0
-
 Page {
     id: page
 
     allowedOrientations: Orientation.All
 
-    DBusInterface {
-        id: sailHubInterface
-
-        service: "harbour.sailhub.service"
-        iface: "harbour.sailhub.service"
-        path: "/harbour/sailhub/service"
-    }
 
     SilicaFlickable {
         anchors.fill: parent
@@ -31,7 +22,7 @@ Page {
 
             Image {
                 id: logo
-                source: "/usr/share/icons/hicolor/512x512/apps/" + Qt.application.name + ".png"
+                source: "/usr/share/icons/hicolor/512x512/apps/harbour-mlsmanager.png"
                 smooth: true
                 height: parent.width / 2
                 width: parent.width / 2
@@ -109,12 +100,12 @@ Page {
                         wrapMode: Text.WrapAnywhere
                         font.pixelSize: Theme.fontSizeSmall
 
-                        text: "https://weblate.nubecula.org/engage/" + Qt.application.name
+                        text: "https://weblate.nubecula.org/engage/harbour-mlsmanager"
                         color: parent.parent.pressed ? Theme.highlightColor : Theme.primaryColor
 
                     }
                 }
-                onClicked: Qt.openUrlExternally("https://weblate.nubecula.org/engage/" + Qt.application.name)
+                onClicked: Qt.openUrlExternally("https://weblate.nubecula.org/engage/harbour-mlsmanager")
             }
 
             Image {
@@ -123,7 +114,7 @@ Page {
                 height: sourceSize.height * width / sourceSize.width
                 smooth: true
                 fillMode: Image.PreserveAspectFit
-                source: "http://weblate.nubecula.org/widgets/" + Qt.application.name + "/-/" + Qt.application.name + "/multi-auto.svg"
+                source: "http://weblate.nubecula.org/widgets/harbour-mlsmanager/-/harbour-mlsmanager/multi-auto.svg"
             }
 
             SectionHeader{
@@ -153,21 +144,12 @@ Page {
                         wrapMode: Text.WrapAnywhere
                         font.pixelSize: Theme.fontSizeSmall
 
-                        text: "https://github.com/black-sheep-dev/" + Qt.application.name
+                        text: "https://github.com/black-sheep-dev/harbour-mlsmanager"
                         color: parent.parent.pressed ? Theme.highlightColor : Theme.primaryColor
 
                     }
                 }
-                onClicked: Qt.openUrlExternally("https://github.com/black-sheep-dev/" + Qt.application.name)
-            }
-
-            ButtonLayout {
-                width: parent.width
-
-                Button {
-                    text: qsTr("Give star")
-                    onClicked: sailHubInterface.call("addStar", ["black-sheep-dev", Qt.application.name])
-                }
+                onClicked: Qt.openUrlExternally("https://github.com/black-sheep-dev/harbour-mlsmanager")
             }
 
             SectionHeader{

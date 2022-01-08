@@ -9,7 +9,7 @@ Name:       harbour-mlsmanager
 # << macros
 
 Summary:    MLS Manager
-Version:    0.2.1
+Version:    0.2.2
 Release:    1
 Group:      Location/Location Framework
 License:    MIT
@@ -24,10 +24,26 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(nemonotifications-qt5)
+BuildRequires:  qt5-qttools-linguist
 BuildRequires:  desktop-file-utils
 
 %description
 Manager for Mozilla Location Service offline packages for Sailfish OS
+
+%if "%{?vendor}" == "chum"
+PackageName: SailHub
+Type: desktop-application
+Categories:
+  - Location
+Custom:
+  Repo: https://github.com/black-sheep-dev/harbour-mlsmanager/
+Icon: https://raw.githubusercontent.com/black-sheep-dev/harbour-mlsmanager/main/icons/harbour-mlsmanager.svg
+Screenshots:
+  - https://github.com/black-sheep-dev/harbour-mlsmanager/raw/master/metadata/screenshot1.png
+  - https://github.com/black-sheep-dev/harbour-mlsmanager/raw/master/metadata/screenshot2.png
+Url:
+  Donation: https://www.paypal.com/paypalme/nubecula/1
+%endif
 
 
 %prep

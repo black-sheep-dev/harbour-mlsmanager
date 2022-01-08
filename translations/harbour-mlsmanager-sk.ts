@@ -43,10 +43,6 @@
         <source>Your language is not available? You are welcome to support this project by translating it on my self hosted Weblate server.</source>
         <translation>Váš jazyk nie je k dispozícii? Ste vítaní v podpore tohto projektu jeho prekladom na mojom hosťovanom Weblate serveri.</translation>
     </message>
-    <message>
-        <source>Give star</source>
-        <translation>Udeliť hviezdičku</translation>
-    </message>
 </context>
 <context>
     <name>MainPage</name>

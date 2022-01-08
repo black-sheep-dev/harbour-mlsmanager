@@ -6,7 +6,7 @@ CoverBackground {
         width: parent.width * 0.8
         height: width
         smooth: true
-        source: "image://theme/" + Qt.application.name
+        source: "image://theme/harbour-mlsmanager"
         anchors.centerIn: parent
         opacity: 0.3
     }
