@@ -64,7 +64,8 @@ TRANSLATIONS += translations/harbour-mlsmanager-de.ts \
     translations/harbour-mlsmanager-nb_NO.ts \
     translations/harbour-mlsmanager-pl.ts \
     translations/harbour-mlsmanager-sk.ts \
-    translations/harbour-mlsmanager-sv.ts
+    translations/harbour-mlsmanager-sv.ts \
+    translations/harbour-mlsmanager-ru.ts
 
 HEADERS += \
     src/constants.h \

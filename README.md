@@ -66,6 +66,7 @@ So don't worry about size on ROOT partition. Thanks to abranson for his suggesti
 - Norwegian Bokmål (by Allan Nordhøy)
 - Polish (by atlochowski)
 - Slovak (by okruhliak / Ladislav Hodas)
+- Russian (by sdiconov)
   
 If your language is not available you are welcome to support this project by translating it on my self-hosted Weblate server:
 
