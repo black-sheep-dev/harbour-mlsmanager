@@ -37,7 +37,7 @@ Categories:
   - Location
 Custom:
   Repo: https://github.com/black-sheep-dev/harbour-mlsmanager/
-Icon: https://raw.githubusercontent.com/black-sheep-dev/harbour-mlsmanager/main/icons/harbour-mlsmanager.svg
+Icon: https://raw.githubusercontent.com/black-sheep-dev/harbour-mlsmanager/master/icons/harbour-mlsmanager.svg
 Screenshots:
   - https://github.com/black-sheep-dev/harbour-mlsmanager/raw/master/metadata/screenshot1.png
   - https://github.com/black-sheep-dev/harbour-mlsmanager/raw/master/metadata/screenshot2.png
