@@ -56,15 +56,15 @@
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Frissítés</translation>
     </message>
     <message>
         <source>Hide search</source>
-        <translation type="unfinished"></translation>
+        <translation>Keresés elrejtése</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Keresés</translation>
     </message>
     <message>
         <source>Install</source>
@@ -80,7 +80,7 @@
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Ellenőrizd az internetkapcsolatot</translation>
     </message>
     <message>
         <source>Update</source>
@@ -150,7 +150,7 @@
     <name>RegionsPage</name>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Frissítés</translation>
     </message>
     <message>
         <source>Update all packages</source>
@@ -170,7 +170,7 @@
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Ellenőrizd az internetkapcsolatot</translation>
     </message>
     <message>
         <source>Install</source>
