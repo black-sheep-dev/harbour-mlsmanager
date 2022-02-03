@@ -1,6 +1,6 @@
 Name: harbour-mlsmanager
 Summary: MLS Manager
-Version: 0.2.2
+Version: 0.2.3
 Release: 1
 # The contents of the Group field should be one of the groups listed here:
 # https://github.com/mer-tools/spectacle/blob/master/data/GROUPS
@@ -15,11 +15,12 @@ Description: |
   Manager for Mozilla Location Service offline packages for Sailfish OS
 
   %if "%{?vendor}" == "chum"
-  PackageName: SailHub
+  PackageName: MLS Manager
   Type: desktop-application
   Categories:
     - Location
   Custom:
+    DescriptionMD: https://github.com/black-sheep-dev/harbour-mlsmanager/raw/main/README.md
     Repo: https://github.com/black-sheep-dev/harbour-mlsmanager/
   Icon: https://raw.githubusercontent.com/black-sheep-dev/harbour-mlsmanager/master/icons/harbour-mlsmanager.svg
   Screenshots:

@@ -9,7 +9,7 @@ Name:       harbour-mlsmanager
 # << macros
 
 Summary:    MLS Manager
-Version:    0.2.2
+Version:    0.2.3
 Release:    1
 Group:      Location/Location Framework
 License:    MIT
@@ -31,11 +31,12 @@ BuildRequires:  desktop-file-utils
 Manager for Mozilla Location Service offline packages for Sailfish OS
 
 %if "%{?vendor}" == "chum"
-PackageName: SailHub
+PackageName: MLS Manager
 Type: desktop-application
 Categories:
   - Location
 Custom:
+  DescriptionMD: https://github.com/black-sheep-dev/harbour-mlsmanager/raw/main/README.md
   Repo: https://github.com/black-sheep-dev/harbour-mlsmanager/
 Icon: https://raw.githubusercontent.com/black-sheep-dev/harbour-mlsmanager/master/icons/harbour-mlsmanager.svg
 Screenshots:
