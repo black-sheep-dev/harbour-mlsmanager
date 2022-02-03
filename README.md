@@ -4,7 +4,11 @@ This app is a manager for Mozilla Location Service offline packages for Sailfish
 
 >![](icons/128x128/harbour-mlsmanager.png)
 
+![](https://www.codefactor.io/repository/github/black-sheep-dev/harbour-mlsmanager/badge?style=plastic)
+
 [![](https://github.com/black-sheep-dev/harbour-mlsmanager/actions/workflows/main.yml/badge.svg)](https://github.com/black-sheep-dev/harbour-mlsmanager/actions/workflows/main.yml)
+
+![](http://weblate.nubecula.org/widgets/harbour-mlsmanager/-/harbour-mlsmanager/svg-badge.svg)
 
 ## Mozilla Location Service
 This app uses the offline data from [Mozilla Location Service](https://location.services.mozilla.com/). \
