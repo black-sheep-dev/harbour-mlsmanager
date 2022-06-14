@@ -9,7 +9,7 @@
     </message>
     <message>
         <source>MLS Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>MLS Manager</translation>
     </message>
     <message>
         <source>Manager for Mozilla Location Service offline packages for Sailfish OS.</source>
@@ -25,7 +25,7 @@
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningar</translation>
     </message>
     <message>
         <source>Your language is not available? You are welcome to support this project by translating it on my self hosted Weblate server.</source>
@@ -33,15 +33,15 @@
     </message>
     <message>
         <source>If you like my work why not buy me a beer?</source>
-        <translation type="unfinished"></translation>
+        <translation>Tycker du om vad jag har gjort så bjud mig på en öl?</translation>
     </message>
     <message>
         <source>Donate with PayPal</source>
-        <translation type="unfinished"></translation>
+        <translation>Donera med PayPal</translation>
     </message>
     <message>
         <source>Donate with Liberpay</source>
-        <translation type="unfinished"></translation>
+        <translation>Donera med Liberpay</translation>
     </message>
 </context>
 <context>
@@ -60,15 +60,15 @@
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Installera</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <source>No offline packages available</source>
@@ -80,11 +80,11 @@
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished"></translation>
+        <translation>Uppdatera</translation>
     </message>
     <message>
         <source>Update all packages</source>
-        <translation type="unfinished"></translation>
+        <translation>Uppdatera alla paket</translation>
     </message>
     <message>
         <source>Updating all packages</source>
@@ -104,7 +104,7 @@
     </message>
     <message>
         <source>Countries</source>
-        <translation type="unfinished"></translation>
+        <translation>Länder</translation>
     </message>
     <message>
         <source>installed</source>
@@ -146,7 +146,7 @@
     <name>RegionsPage</name>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished">Uppdatera</translation>
+        <translation>Uppdatera</translation>
     </message>
     <message>
         <source>Update all packages</source>
@@ -158,11 +158,11 @@
     </message>
     <message>
         <source>Regions</source>
-        <translation type="unfinished"></translation>
+        <translation>Regioner</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Installera</translation>
     </message>
     <message>
         <source>Installing offline package</source>
@@ -170,7 +170,7 @@
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <source>Removing offline package</source>
@@ -178,7 +178,7 @@
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished"></translation>
+        <translation>Uppdatera</translation>
     </message>
     <message>
         <source>Updating offline package</source>
