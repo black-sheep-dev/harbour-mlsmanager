@@ -80,7 +80,7 @@
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Vérifiez votre connexion réseau</translation>
     </message>
     <message>
         <source>Update</source>
@@ -170,7 +170,7 @@
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Vérifiez votre connexion réseau</translation>
     </message>
     <message>
         <source>Install</source>
