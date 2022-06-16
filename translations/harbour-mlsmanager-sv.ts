@@ -29,7 +29,7 @@
     </message>
     <message>
         <source>Your language is not available? You are welcome to support this project by translating it on my self hosted Weblate server.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hjälp mig att översätta denna app till flera språk genom att besöka min Weblate server.</translation>
     </message>
     <message>
         <source>If you like my work why not buy me a beer?</source>
@@ -76,7 +76,7 @@
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrollera din internet uppkoppling</translation>
     </message>
     <message>
         <source>Update</source>
@@ -88,7 +88,7 @@
     </message>
     <message>
         <source>Updating all packages</source>
-        <translation type="unfinished"></translation>
+        <translation>Uppdatera alla paket</translation>
     </message>
     <message>
         <source>Installing offline package</source>
@@ -150,11 +150,11 @@
     </message>
     <message>
         <source>Update all packages</source>
-        <translation type="unfinished"></translation>
+        <translation>Uppdatera alla paket</translation>
     </message>
     <message>
         <source>Updating all packages</source>
-        <translation type="unfinished"></translation>
+        <translation>Uppdatera alla paket</translation>
     </message>
     <message>
         <source>Regions</source>
@@ -194,7 +194,7 @@
     </message>
     <message>
         <source>Check your internet connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrollera din internet uppkoppling</translation>
     </message>
 </context>
 <context>
