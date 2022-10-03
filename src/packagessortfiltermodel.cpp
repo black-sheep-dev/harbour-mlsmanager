@@ -34,22 +34,24 @@ void PackagesSortFilterModel::setTypeFilter(quint8 type)
 
 bool PackagesSortFilterModel::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const
 {
-    if (m_namePattern.isEmpty() && m_typeFilter == 0)
-        return true;
+    const auto index = sourceModel()->index(source_row, 0, source_parent);
 
-    const QModelIndex index = sourceModel()->index(source_row, 0, source_parent);
+    const auto name = sourceModel()->data(index, PackagesModel::NameRole).toString();
+    const auto type = sourceModel()->data(index, PackagesModel::TypeRole).toUInt();
 
-    const QString name = sourceModel()->data(index, PackagesModel::NameRole).toString();
-    const quint8 type = sourceModel()->data(index, PackagesModel::TypeRole).toUInt();
-
-    bool found{false};
-    if (!m_namePattern.isEmpty()) {
-        found = name.contains(name, Qt::CaseInsensitive);
-    }
+    bool found{true};
 
     if (m_typeFilter != PackageType::Undefined) {
         found = (type == m_typeFilter);
     }
 
-    return found;
+    if (!found) {
+        return false;
+    }
+
+    if (!m_namePattern.isEmpty()) {
+        return name.contains(m_namePattern, Qt::CaseInsensitive);
+    }
+
+    return true;
 }
