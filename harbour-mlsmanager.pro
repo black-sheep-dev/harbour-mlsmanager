@@ -60,7 +60,11 @@ CONFIG += sailfishapp_i18n
 # planning to localize your app, remember to comment out the
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
-TRANSLATIONS += translations/harbour-mlsmanager-de.ts \
+TRANSLATIONS += \
+    translations/harbour-mlsmanager-de.ts \
+    translations/harbour-mlsmanager-es.ts \
+    translations/harbour-mlsmanager-fr.ts \
+    translations/harbour-mlsmanager-hu.ts \
     translations/harbour-mlsmanager-nb_NO.ts \
     translations/harbour-mlsmanager-pl.ts \
     translations/harbour-mlsmanager-sk.ts \
@@ -82,6 +86,9 @@ HEADERS += \
 flags.files = icons/flags/*
 flags.path = $$INSTALL_ROOT/usr/share/harbour-mlsmanager/flags/
 
+icons.files = icons/*.svg
+icons.path = $$INSTALL_ROOT/usr/share/harbour-mlsmanager/icons
+
 images.files = images/*
 images.path = $$INSTALL_ROOT/usr/share/harbour-mlsmanager/images/
 
@@ -91,7 +98,4 @@ privileges.path = $$INSTALL_ROOT/usr/share/mapplauncherd/privileges.d/
 dbus.files = data/harbour.mlsmanager.service
 dbus.path = $$INSTALL_ROOT/usr/share/dbus-1/services
 
-INSTALLS += flags images privileges dbus
-
-RESOURCES += \
-    ressources.qrc
+INSTALLS += flags icons images privileges dbus

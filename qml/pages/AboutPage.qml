@@ -91,7 +91,7 @@ Page {
                         height: width
                         fillMode: Image.PreserveAspectFit
                         anchors.verticalCenter: parent.verticalCenter
-                        source: "qrc:///icons/weblate"
+                        source: "/usr/share/harbour-mlsmanager/icons/github.svg"
                     }
 
                     Label{
@@ -135,7 +135,7 @@ Page {
                         height: width
                         fillMode: Image.PreserveAspectFit
                         anchors.verticalCenter: parent.verticalCenter
-                        source: "qrc:///icons/git"
+                        source: "/usr/share/harbour-mlsmanager/icons/git.svg"
                     }
 
                     Label{
@@ -180,7 +180,7 @@ Page {
                         height: width
                         fillMode: Image.PreserveAspectFit
                         anchors.verticalCenter: parent.verticalCenter
-                        source: "qrc:///icons/paypal"
+                        source: "/usr/share/harbour-mlsmanager/icons/paypal.svg"
                     }
                     Label{
                         width: parent.width - parent.height - parent.spacing
@@ -210,7 +210,7 @@ Page {
                         height: width
                         fillMode: Image.PreserveAspectFit
                         anchors.verticalCenter: parent.verticalCenter
-                        source: "qrc:///icons/liberpay"
+                        source: "/usr/share/harbour-mlsmanager/icons/liberpay.svg"
                     }
                     Label{
                         width: parent.width - parent.height - parent.spacing
