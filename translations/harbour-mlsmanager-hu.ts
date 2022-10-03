@@ -43,10 +43,6 @@
         <source>Your language is not available? You are welcome to support this project by translating it on my self hosted Weblate server.</source>
         <translation>Nem érhető el a saját nyelveden? Támogasd a projektet a fordítással a saját Weblate szerveremen.</translation>
     </message>
-    <message>
-        <source>Give star</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>MainPage</name>
