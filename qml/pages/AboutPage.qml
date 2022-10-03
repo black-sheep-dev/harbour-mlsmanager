@@ -91,7 +91,7 @@ Page {
                         height: width
                         fillMode: Image.PreserveAspectFit
                         anchors.verticalCenter: parent.verticalCenter
-                        source: "/usr/share/harbour-mlsmanager/icons/github.svg"
+                        source: "/usr/share/harbour-mlsmanager/icons/weblate.svg"
                     }
 
                     Label{
@@ -135,7 +135,7 @@ Page {
                         height: width
                         fillMode: Image.PreserveAspectFit
                         anchors.verticalCenter: parent.verticalCenter
-                        source: "/usr/share/harbour-mlsmanager/icons/git.svg"
+                        source: "/usr/share/harbour-mlsmanager/icons/github.svg"
                     }
 
                     Label{
